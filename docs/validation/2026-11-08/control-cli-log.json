@@ -1,0 +1,87 @@
+[
+  {
+    "arguments": [
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/control-board/erc.json",
+      "/Users/my/Documents/nixie-jjy-clock/hardware/pcb/generated/control-board.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "0 個の違反を検出しました\nDRC レポートを /Users/my/Documents/nixie-jjy-clock/build/control-board/erc.json に保存しました\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "arguments": [
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/control-board/control.xml",
+      "/Users/my/Documents/nixie-jjy-clock/hardware/pcb/generated/control-board.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "arguments": [
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--schematic-parity",
+      "--exit-code-violations",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/control-board/drc.json",
+      "/Users/my/Documents/nixie-jjy-clock/hardware/pcb/generated/control-board.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "0 個の違反を検出しました\n0 個の未配線アイテムを検出しました\n0 個の回路図の等価性の問題が見つかりました\n/Users/my/Documents/nixie-jjy-clock/build/control-board/drc.json にDRC レポートを保存\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "arguments": [
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "F.Cu,B.Cu,F.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/control-board/routing.svg",
+      "/Users/my/Documents/nixie-jjy-clock/hardware/pcb/generated/control-board.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "'/Users/my/Documents/nixie-jjy-clock/build/control-board/routing.svg' にプロットしました。\n完了.\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "F.Fab,Edge.Cuts",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--sketch-pads-on-fab-layers",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/control-board/assembly.svg",
+      "/Users/my/Documents/nixie-jjy-clock/hardware/pcb/generated/control-board.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "'/Users/my/Documents/nixie-jjy-clock/build/control-board/assembly.svg' にプロットしました。\n完了.\n",
+    "stderr": ""
+  }
+]

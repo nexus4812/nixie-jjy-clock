@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "filename": "nixie-jjy-clock.kicad_pro",
+    "version": 1
+  },
+  "text_variables": {
+    "DESIGN_STATUS": "DRAFT_NOT_FOR_MANUFACTURE"
+  }
+}

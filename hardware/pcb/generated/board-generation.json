@@ -1,0 +1,886 @@
+{
+  "status": "ROUTED_CANDIDATE_NOT_FOR_MANUFACTURE",
+  "revision": "control-r1",
+  "layout_sha256": "fe06a787525f01dd9d97be741d64c876ed580489680820c35a4b2c2e88f2c9be",
+  "mechanical_sha256": "74ae60eafa13555db514e77a6e17300a60d0c50df21a3e49cd89f23c5cb596f3",
+  "footprints": [
+    {
+      "reference": "A1",
+      "library_id": "Module:Arduino_Nano",
+      "library_file_sha256": "97ad3cbbf882807c49c583b7ad9073c0911707b17c3dfdd753ca9eca4c9653c6",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        10,
+        7
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "U1",
+      "library_id": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "library_file_sha256": "f9b5075740f7816c540ae1137f025d659beaec522ed7b86b1a5274cc9a2d8a25",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        47,
+        16
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "U2",
+      "library_id": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "library_file_sha256": "f9b5075740f7816c540ae1137f025d659beaec522ed7b86b1a5274cc9a2d8a25",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        69,
+        16
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "U3",
+      "library_id": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "library_file_sha256": "07aa02ced9fcdc61d7c6bb5ea1b86803731041e9e171db91a991c3daa7817383",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        45,
+        40
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "U4",
+      "library_id": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+      "library_file_sha256": "dec3d73e5b87d0ca4d957119b74f768649fa1140e06cc0a5bd53a87885e4d602",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        34,
+        30
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "U5",
+      "library_id": "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm",
+      "library_file_sha256": "a885b619b22880c9559522d2bf865b059d80453b95a98defc9e6ceef284da1fc",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        85,
+        17
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "BT1",
+      "library_id": "Battery:BatteryHolder_Keystone_1060_1x2032",
+      "library_file_sha256": "110f95ed0968ff80302c6cdbeddd63ab352af9bee3872e01af4a643fe4ca7da8",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        75,
+        41
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "Q2",
+      "library_id": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+      "library_file_sha256": "dec3d73e5b87d0ca4d957119b74f768649fa1140e06cc0a5bd53a87885e4d602",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        44,
+        26
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "Q3",
+      "library_id": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+      "library_file_sha256": "dec3d73e5b87d0ca4d957119b74f768649fa1140e06cc0a5bd53a87885e4d602",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        53,
+        26
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "JP1",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "library_file_sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        27,
+        51
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J3",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "library_file_sha256": "571d2d16b49795f8f9a91f96cc83fd2adf49890cd66c377189c44204ebd03c29",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "at_mm": [
+        45,
+        51
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J4",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "library_file_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        33,
+        39
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "J40",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+      "library_file_sha256": "4b62e226ec163657a79acde1229c1fca2b2453ff75fddcbc038fc7484bbc2711",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "at_mm": [
+        96,
+        29
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "J41",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "library_file_sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        17,
+        51
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J42",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "library_file_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        35,
+        51
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J45",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+      "library_file_sha256": "4b62e226ec163657a79acde1229c1fca2b2453ff75fddcbc038fc7484bbc2711",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "at_mm": [
+        96,
+        14
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "J50",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "library_file_sha256": "5f2993c50dbd5024384bf6fa972fcd10d40d0837039e1e371b326a27d9f5b8b7",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "at_mm": [
+        32.5,
+        9.75
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J51",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "library_file_sha256": "5f2993c50dbd5024384bf6fa972fcd10d40d0837039e1e371b326a27d9f5b8b7",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "at_mm": [
+        49,
+        9.75
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J52",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "library_file_sha256": "5f2993c50dbd5024384bf6fa972fcd10d40d0837039e1e371b326a27d9f5b8b7",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "at_mm": [
+        65.5,
+        9.75
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "J53",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "library_file_sha256": "5f2993c50dbd5024384bf6fa972fcd10d40d0837039e1e371b326a27d9f5b8b7",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "at_mm": [
+        82,
+        9.75
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R10",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        34,
+        13
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R11",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        34,
+        17
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R12",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        34,
+        21
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R13",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        39,
+        23
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R14",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        33,
+        25
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R20",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        31,
+        47
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R21",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        38,
+        40
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R22",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        38,
+        45
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R30",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30,
+        30
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R31",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        90,
+        23
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R32",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        61,
+        26
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R33",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        44,
+        31
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R34",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        47,
+        31
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R35",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        66,
+        26
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R36",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        53,
+        31
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "R37",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        56,
+        31
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R40",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        96,
+        44.5
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R41",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        56,
+        44
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R42",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        56,
+        40
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "R43",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        56,
+        36
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C3",
+      "library_id": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm",
+      "library_file_sha256": "fd0a251de515130de6e789ffb786d43c746b83178e437feb9fc4f39b6ea9ef39",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        4,
+        44
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "reference": "C4",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        29,
+        43
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C10",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        40,
+        14
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C11",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        62,
+        14
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C12",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        61,
+        19
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C20",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        38,
+        35
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C30",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30,
+        35
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C31",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30,
+        39
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C32",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        36,
+        25
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C33",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        91,
+        19
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C34",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        90,
+        14
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C40",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        52,
+        44
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C41",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        52,
+        40
+      ],
+      "rotation_deg": 90
+    },
+    {
+      "reference": "C42",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        52,
+        36
+      ],
+      "rotation_deg": 90
+    }
+  ],
+  "unassigned_nets": [],
+  "layers": 2,
+  "manufacturing_release": false,
+  "routing": {
+    "router": "Freerouting 2.5.0 JVM",
+    "jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+    "dsn_sha256": "ef7cb5468563c37080e4c80dbbd23d7ffe5678bae98e540cf34109165809f333",
+    "ses_sha256": "cf5d30cde307853549c0a3e6eae4780fa69e8d6e0d4935d9f301fe041da2a3b8"
+  },
+  "tracks_widened_to_minimum": 76,
+  "tracks_and_vias": 866
+}

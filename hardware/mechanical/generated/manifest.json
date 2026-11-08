@@ -1,0 +1,191 @@
+{
+  "revision": "mechanical-r0",
+  "kicad": "10.0.8",
+  "status": "MECHANICAL_ONLY_UNROUTED",
+  "boards": [
+    {
+      "id": "display_0",
+      "file": "display_0.kicad_pcb",
+      "size_mm": [
+        34,
+        54
+      ],
+      "assembly_center_mm": [
+        -63.0,
+        40,
+        48
+      ],
+      "assembly_plane": "XZ",
+      "holes_pcb_mm": [
+        [
+          4.0,
+          50.0
+        ],
+        [
+          30.0,
+          50.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          30.0,
+          4.0
+        ]
+      ]
+    },
+    {
+      "id": "display_1",
+      "file": "display_1.kicad_pcb",
+      "size_mm": [
+        34,
+        54
+      ],
+      "assembly_center_mm": [
+        -21.0,
+        40,
+        48
+      ],
+      "assembly_plane": "XZ",
+      "holes_pcb_mm": [
+        [
+          4.0,
+          50.0
+        ],
+        [
+          30.0,
+          50.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          30.0,
+          4.0
+        ]
+      ]
+    },
+    {
+      "id": "display_2",
+      "file": "display_2.kicad_pcb",
+      "size_mm": [
+        34,
+        54
+      ],
+      "assembly_center_mm": [
+        21.0,
+        40,
+        48
+      ],
+      "assembly_plane": "XZ",
+      "holes_pcb_mm": [
+        [
+          4.0,
+          50.0
+        ],
+        [
+          30.0,
+          50.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          30.0,
+          4.0
+        ]
+      ]
+    },
+    {
+      "id": "display_3",
+      "file": "display_3.kicad_pcb",
+      "size_mm": [
+        34,
+        54
+      ],
+      "assembly_center_mm": [
+        63.0,
+        40,
+        48
+      ],
+      "assembly_plane": "XZ",
+      "holes_pcb_mm": [
+        [
+          4.0,
+          50.0
+        ],
+        [
+          30.0,
+          50.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          30.0,
+          4.0
+        ]
+      ]
+    },
+    {
+      "id": "control",
+      "file": "control.kicad_pcb",
+      "size_mm": [
+        100,
+        55
+      ],
+      "assembly_center_mm": [
+        -45,
+        72,
+        16
+      ],
+      "assembly_plane": "XY",
+      "holes_pcb_mm": [
+        [
+          4.0,
+          51.0
+        ],
+        [
+          96.0,
+          51.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          96.0,
+          4.0
+        ]
+      ]
+    },
+    {
+      "id": "colon",
+      "file": "colon.kicad_pcb",
+      "size_mm": [
+        14,
+        42
+      ],
+      "assembly_center_mm": [
+        0,
+        30,
+        48
+      ],
+      "assembly_plane": "XZ",
+      "holes_pcb_mm": [
+        [
+          7.0,
+          38.0
+        ],
+        [
+          7.0,
+          4.0
+        ]
+      ]
+    }
+  ]
+}

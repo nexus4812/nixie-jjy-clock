@@ -1,0 +1,8 @@
+# CADと検査スナップショットは生成物。GitHubの通常レビューでは折り畳む。
+hardware/**/generated/** linguist-generated=true
+enclosure/generated/** linguist-generated=true
+docs/validation/** linguist-generated=true
+
+# KiCad/Freeroutingの出力をハッシュ照合できるよう、原文の空白を保持する。
+docs/validation/**/*.svg -whitespace
+hardware/pcb/generated/routing/*.ses -whitespace

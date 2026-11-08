@@ -1,0 +1,29 @@
+{
+  "status": "SES_GENERATED_REQUIRES_KICAD_DRC",
+  "router": "Freerouting 2.5.0 JVM",
+  "jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+  "dsn_sha256": "ef7cb5468563c37080e4c80dbbd23d7ffe5678bae98e540cf34109165809f333",
+  "ses_sha256": "cf5d30cde307853549c0a3e6eae4780fa69e8d6e0d4935d9f301fe041da2a3b8",
+  "java_version": "openjdk version \"25.0.5.0.3\" 2026-10-24 LTS\nOpenJDK Runtime Environment Zulu25.38+109-CA (build 25.0.5.0.3+1-LTS)\nOpenJDK 64-Bit Server VM Zulu25.38+109-CA (build 25.0.5.0.3+1-LTS, mixed mode, sharing)",
+  "command": [
+    ".cache/tools/zulu25/zulu25.38.109-ca-jre25.0.5.0.3-macosx_aarch64/Contents/Home/bin/java",
+    "-Xmx2g",
+    "-jar",
+    "/Users/my/Documents/nixie-jjy-clock/.cache/freerouting-2.5.0.jar",
+    "-de",
+    "/Users/my/Documents/nixie-jjy-clock/build/control-board/control-board.dsn",
+    "-do",
+    "/Users/my/Documents/nixie-jjy-clock/build/control-board/control-board.ses",
+    "-da",
+    "--user_data_path=/Users/my/Documents/nixie-jjy-clock/build/freerouting-jvm-data",
+    "--gui.enabled=false",
+    "--api_server.enabled=false",
+    "--mcp_server.enabled=false",
+    "--router.autorouter.max_passes=80",
+    "--router.optimizer.max_threads=2",
+    "--router.optimizer.enabled=false",
+    "--router.automatic_neckdown=true",
+    "--router.fanout.enabled=true"
+  ],
+  "manufacturing_release": false
+}

@@ -1,0 +1,22 @@
+item_id,description,candidate,quantity,unit,unit_low_jpy,unit_high_jpy,price_kind,source_ids,procurement_status,notes
+B01,表示管,IN-12B,4,本,900,1500,budget,S01;S02,unconfirmed,資料確認済み・価格は仮枠・新品等級とロット確認待ち
+B02,交換ソケット,SK-136または適合レセプタクル一式,4,管分,150,400,budget,S01,unconfirmed,実物の接触径と耐圧を確認・個別ピンなら12極分を1組とする
+B03,カソードドライバー,K155ID1,4,個,250,450,budget,S03,unconfirmed,非選択出力保護が未解決・交換用ICソケットはB16
+B04,出力拡張,Nexperia 74HCT595D SOIC-16候補,2,個,100,200,budget,S04;S05,unconfirmed,control-r1へ候補割当・HCとの取り違えに注意・実売未確認
+B05,マイコン,クラシックNano互換 ATmega328P 5V/16MHz,1,枚,500,1000,budget,S13;S14,unconfirmed,汎用互換機の価格枠・見積未取得・国内代替Maker Nanoは1680円
+B06,RTC IC,DS3231S#またはDS3231SN#,1,個,1500,2200,budget,S06,unconfirmed,正規調達を優先・充電回路付きモジュールを前提にしない
+B07,電池とホルダー,CR2032とKeystone 1060候補,1,組,250,450,budget,S40,unconfirmed,一次電池・充電回路なし・1060の実売価格は未見積で予算枠未更新
+B08,JJY受信とアンテナ,RCCM-6181B-JJY,1,組,1045,1045,observed,S07;S08;S09,preparing,税込表示のみ・準備中で調達未成立
+B09,高電圧昇圧,資料と実物が一致するNCH6100HV候補,1,枚,1500,2500,budget,S12,unconfirmed,個別販売品未確定・負荷20mA以上の保証を要確認
+B10,5V降圧,12Vから5Vの既製DC/DC未選定,1,枚,300,600,budget,,unconfirmed,0.5A以上を候補・雑音と保護を確認
+B11,受信用3V電源,MCP1700-3002E/TOと局所フィルター候補,1,組,150,300,budget,S09;S33,unconfirmed,出力誤差・ノイズ・逆給電確認
+B12,受信出力バッファ,SN74HCT125D SOIC-14候補,1,個,100,250,budget,S32,unconfirmed,HCT14とは異なる・control-r1へ候補割当・現物と価格未確認
+B13,選局レベル変換,小信号NPN等未選定,2,回路,20,50,budget,S08;S09,unconfirmed,5V制御から3Vへの変換
+B14,コロン,仕様確認できる橙色ネオン,2,個,50,150,budget,S18,unconfirmed,NE-2の通称だけで購入しない
+B15,ネオン駆動,MPSA42候補,2,個,50,100,budget,S17,unconfirmed,メーカーと端子形状を確定
+B16,抵抗コンデンサーICソケット等,HV定格対応品とデカップリング,1,式,800,1600,budget,,unconfirmed,放電抵抗も含む・K155ID1追加保護回路の増額は未算入
+B17,配線保護コネクターカバー,ヒューズ逆接保護HV許可回路ハーネス等,1,式,800,1500,budget,,unconfirmed,外装と別のHV保護を含む仮枠
+B18,手動操作と状態表示,ボタン3個とLED等,1,式,250,500,budget,,unconfirmed,ボタンと状態LED
+B19,ACアダプター候補,ATS012S-W120U,1,個,980,980,observed,S22,listed,税込表示・PSE等安全証憑と現物は未確認
+B20,試作PCB,制御と表示子コロンの裸基板製造,1,発注,1500,3000,budget,,unconfirmed,基板枚数と外形未定・JLCPCB見積未取得
+B21,送料等の予備枠,複数店舗送料や為替差等,1,式,1000,2500,budget,,unconfirmed,外装工具予備管測定器は含まない

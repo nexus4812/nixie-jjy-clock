@@ -1,0 +1,139 @@
+{
+  "records": [
+    {
+      "id": "S01",
+      "url": "https://www.tube-tester.com/sites/nixie/dat_arch/IN-12A_IN-12B_03.pdf",
+      "path": ".cache/references/S01.pdf",
+      "status": "cached",
+      "sha256": "21a85351518c8819d1ae18c1c649f2edafdb26dc9a656c6d31a9e41858fdedb4",
+      "bytes": 2257818,
+      "checked_at_utc": "2026-11-08T08:33:28.393954+00:00"
+    },
+    {
+      "id": "S02",
+      "url": "https://download.mikroe.com/documents/datasheets/Nixie_IN-12B_datasheet.pdf",
+      "path": ".cache/references/S02.pdf",
+      "status": "cached",
+      "sha256": "98c23e9b4a4fd37417d0b9c9c42b2d998a65883f6911737f6e6b60acab318562",
+      "bytes": 1157334,
+      "checked_at_utc": "2026-11-08T08:33:28.395342+00:00"
+    },
+    {
+      "id": "S03",
+      "url": "https://eandc.ru/pdf/mikroskhema/k155id1.pdf",
+      "path": ".cache/references/S03.pdf",
+      "status": "cached",
+      "sha256": "7331b8bdae52e9b4b9c92df6ea42b35df92cc4fdcb9fedeaed6e4ee8941c0a9e",
+      "bytes": 116060,
+      "checked_at_utc": "2026-11-08T08:33:28.395660+00:00"
+    },
+    {
+      "id": "S04",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct595.pdf",
+      "path": ".cache/references/S04.pdf",
+      "status": "cached",
+      "sha256": "07a763edcc4ae0eea846ecb27c75e3ec84ea43af2613c6e5fe9af6bf52bb98a5",
+      "bytes": 1024472,
+      "checked_at_utc": "2026-11-08T08:33:28.397453+00:00"
+    },
+    {
+      "id": "S05",
+      "url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf",
+      "path": ".cache/references/S05.pdf",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "S06",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf",
+      "path": ".cache/references/S06.pdf",
+      "status": "failed",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "S08",
+      "url": "https://aitendo3.sakura.ne.jp/aitendo_data/product_img/test/RCCM-6181B-JJY/RCCM-6181B-JJY.pdf",
+      "path": ".cache/references/S08.pdf",
+      "status": "cached",
+      "sha256": "08a0fd0f0652abdf15e47e2fe60a2bb7c33047dae0a8f6144cb9afc1c039f55f",
+      "bytes": 134402,
+      "checked_at_utc": "2026-11-08T08:33:53.633408+00:00"
+    },
+    {
+      "id": "S09",
+      "url": "https://www.mas-oy.com/wp-content/uploads/2016/05/da6181B.pdf",
+      "path": ".cache/references/S09.pdf",
+      "status": "cached",
+      "sha256": "736266076cce1e8be30f557c281b2032cec4384c5ffb552908eee07a426dbd45",
+      "bytes": 213699,
+      "checked_at_utc": "2026-11-08T08:33:53.634734+00:00"
+    },
+    {
+      "id": "S12",
+      "url": "https://nixieclock.org/wp-content/uploads/2020/02/NIXIE-Power-Supply-Datasheet-EN-v1.0.0.pdf",
+      "path": ".cache/references/S12.pdf",
+      "status": "cached",
+      "sha256": "277d4a5f8662e0a2676ceeaa9246e91802c8960667e80210d6c43cde17e41dfd",
+      "bytes": 674136,
+      "checked_at_utc": "2026-11-08T08:33:53.636273+00:00"
+    },
+    {
+      "id": "S13",
+      "url": "https://docs.arduino.cc/resources/datasheets/A000005-datasheet.pdf",
+      "path": ".cache/references/S13.pdf",
+      "status": "cached",
+      "sha256": "3ad0dc1e7dc0b9c9e9beef501cad6c0b03625c945d3cb482f65a956a4cf96084",
+      "bytes": 1271922,
+      "checked_at_utc": "2026-11-08T08:33:53.638573+00:00"
+    },
+    {
+      "id": "S14",
+      "url": "https://docs.arduino.cc/resources/pinouts/A000005-full-pinout.pdf",
+      "path": ".cache/references/S14.pdf",
+      "status": "cached",
+      "sha256": "2b9140b09cb66c788c1c4e01da33498a63e245fc133ac7d32697e140b00ea317",
+      "bytes": 235594,
+      "checked_at_utc": "2026-11-08T08:33:53.639488+00:00"
+    },
+    {
+      "id": "S15",
+      "url": "https://ww1.microchip.com/downloads/en/devicedoc/atmel-7810-automotive-microcontrollers-atmega328p_datasheet.pdf",
+      "path": ".cache/references/S15.pdf",
+      "status": "cached",
+      "sha256": "fb84858d0b12c695a12b13f0c74b962d81210247d440c7a24c0ed23dfabfdfaf",
+      "bytes": 8585103,
+      "checked_at_utc": "2026-11-08T08:33:53.649009+00:00"
+    },
+    {
+      "id": "S16",
+      "url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT14.pdf",
+      "path": ".cache/references/S16.pdf",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "S17",
+      "url": "https://www.onsemi.com/pdf/datasheet/mpsa42-d.pdf",
+      "path": ".cache/references/S17.pdf",
+      "status": "failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "id": "S18",
+      "url": "https://sunnyscorp.jp/cms/wp-content/uploads/2022/06/neon_lamp202206.pdf",
+      "path": ".cache/references/S18.pdf",
+      "status": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "id": "S32",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf",
+      "path": ".cache/references/S32.pdf",
+      "final_url": "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf",
+      "status": "downloaded",
+      "sha256": "7f06363847317c8aa5892435313656e6f592ab0f6d0d7bfd4234e46996c5fe42",
+      "bytes": 956379,
+      "checked_at_utc": "2026-11-08T08:33:54.055774+00:00"
+    }
+  ]
+}

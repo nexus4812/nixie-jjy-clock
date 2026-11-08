@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "generator": "scripts/generate_schematic.py",
+  "variant": "control",
+  "design_sha256": "a4516424c0a14e06eff751c83f8011561e4d500281d58c55bef0815ca5c61401",
+  "layout_sha256": "fe06a787525f01dd9d97be741d64c876ed580489680820c35a4b2c2e88f2c9be",
+  "status": "DRAFT_NOT_FOR_MANUFACTURE",
+  "sheet_count": 6,
+  "component_count": 54
+}

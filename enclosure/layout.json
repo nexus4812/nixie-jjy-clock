@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "revision": "mechanical-r0",
+  "status": "暫定・現物寸法未照合・加工と発注禁止",
+  "units": "mm",
+  "coordinates": "X=正面の左右、Y=前面板裏から奥へ、Z=底から上。前面板裏Y=0。基板穴は各基板中心基準。",
+  "case": {"width": 240, "depth": 110, "height": 90, "wall": 10, "rear_thickness": 3, "brass_thickness": 1.5},
+  "tube": {"width": 21, "height": 31, "envelope_depth": 35, "center_z": 48, "pitch": 42, "center_offsets": [-1.5, -0.5, 0.5, 1.5], "front_y": -3, "socket_stack": 8, "radial_gap": 1, "aperture_corner_radius": 5, "source": "S01。外形は簡略包絡、ソケット積層は未確認"},
+  "display_pcb": {"width": 34, "height": 54, "thickness": 1.6, "mount_holes": [[-13,-23],[13,-23],[-13,23],[13,23]], "hole_diameter": 3.2},
+  "control_pcb": {"width": 100, "height": 55, "thickness": 1.6, "center": [-45,72,16], "mount_holes": [[-46,-23.5],[46,-23.5],[-46,23.5],[46,23.5]], "hole_diameter": 3.2},
+  "colon_pcb": {"width": 14, "height": 42, "thickness": 1.6, "plane_y": 30, "mount_holes": [[0,-17],[0,17]], "hole_diameter": 2.2},
+  "colon": {"center_x": 0, "center_offsets_z": [-8,8], "lamp_diameter": 5, "aperture_diameter": 6, "front_y": -2, "envelope_depth": 16},
+  "panel_mount_holes": [[-111,9],[111,9],[-111,81],[111,81]],
+  "panel_hole_diameter": 3.2,
+  "buttons": {"centers_x": [-35,-15,5], "center_z": 42, "hole_diameter": 7, "body_depth": 15, "labels": ["SET","+","-"]},
+  "power_jack": {"center_x": 75, "center_z": 55, "hole_diameter": 8, "body_depth": 15},
+  "status_led": {"center_x": 35, "center_z": 42, "hole_diameter": 3.2},
+  "antenna": {"center": [-75,88,70], "length": 60, "diameter": 10, "minimum_hv_distance": 100},
+  "hv_module_envelope": {"center": [78,75,22], "size": [50,35,20], "source": "配置予約枠。実モジュール寸法・端子・カバー寸法ではない"},
+  "clearance": {"mechanical_minimum": 3, "hv_cover_wall": 2, "hv_cover_gap": 4, "note": "仮の干渉検査値。沿面距離や感電防止の合格値ではない"}
+}

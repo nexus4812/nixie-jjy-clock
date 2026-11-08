@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "test": "異なる入力DSNのSESを拒否し既存PCBを上書きしない",
+  "returncode": 1,
+  "board_unchanged": true,
+  "expected_reason_found": true,
+  "manufacturing_release": false
+}

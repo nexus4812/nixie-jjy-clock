@@ -1,0 +1,334 @@
+{
+  "checked_on": "2026-11-08",
+  "note": "downloadはローカル取得対象。原メーカー不明・翻訳・販売情報は一次資料と区別する。再配布許諾は未確認のためPDF本体をGitへ追加しない。",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "IN-12A/IN-12B 1988年原資料スキャン",
+      "kind": "原資料の第三者保存",
+      "url": "https://www.tube-tester.com/sites/nixie/dat_arch/IN-12A_IN-12B_03.pdf",
+      "locator": "PDF p.3 図面、p.4 定格、p.5 使用条件",
+      "download": true
+    },
+    {
+      "id": "S02",
+      "title": "IN-12A/IN-12B 英訳",
+      "kind": "第三者翻訳・参考",
+      "url": "https://download.mikroe.com/documents/datasheets/Nixie_IN-12B_datasheet.pdf",
+      "locator": "PDF p.3 図面、p.4 定格、p.5 使用条件",
+      "download": true
+    },
+    {
+      "id": "S03",
+      "title": "К155ИД1 技術資料",
+      "kind": "販売元配布・原メーカー/版不明",
+      "url": "https://eandc.ru/pdf/mikroskhema/k155id1.pdf",
+      "locator": "PDF p.1 端子、p.2-3 電気特性・非選択出力",
+      "download": true
+    },
+    {
+      "id": "S04",
+      "title": "SN74HCT595 SCLS880A",
+      "kind": "メーカー一次資料",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct595.pdf",
+      "locator": "PDF p.3 端子、p.4-5 定格・出力電流、PWはTSSOP",
+      "download": true
+    },
+    {
+      "id": "S05",
+      "title": "Nexperia 74HC595/74HCT595 Rev.12",
+      "kind": "メーカー一次資料",
+      "url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf",
+      "locator": "Pinning、Recommended operating conditions、Static characteristics",
+      "download": true
+    },
+    {
+      "id": "S06",
+      "title": "DS3231 Rev.10",
+      "kind": "メーカー一次資料",
+      "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf",
+      "locator": "PDF p.2-3 電源、p.9 端子、p.13-14 制御、p.18 実装",
+      "download": true
+    },
+    {
+      "id": "S07",
+      "title": "RCCM-6181B-JJY 商品ページ",
+      "kind": "販売情報",
+      "url": "https://www.aitendo.com/product/21528",
+      "locator": "価格・準備中・1.1-3.6V・寸法",
+      "download": false
+    },
+    {
+      "id": "S08",
+      "title": "RCCM-6181B-JJY / JJY-1060N-MAS 2022-06-07",
+      "kind": "販売元配布モジュール仕様書",
+      "url": "https://aitendo3.sakura.ne.jp/aitendo_data/product_img/test/RCCM-6181B-JJY/RCCM-6181B-JJY.pdf",
+      "locator": "PDF p.3 形状、p.4 端子・選局・電気特性。5V表記はS09と矛盾",
+      "download": true
+    },
+    {
+      "id": "S09",
+      "title": "MAS6181B DA6181B.003",
+      "kind": "メーカー一次資料",
+      "url": "https://www.mas-oy.com/wp-content/uploads/2016/05/da6181B.pdf",
+      "locator": "PDF p.2 出力極性、p.3 電源上限・5µA、制御入力しきい値",
+      "download": true
+    },
+    {
+      "id": "S10",
+      "title": "NICT 標準電波の出し方",
+      "kind": "運用機関一次資料",
+      "url": "https://jjy.nict.go.jp/jjy/trans/index.html",
+      "locator": "タイムコード・フレーム先頭時刻・呼出符号・うるう秒",
+      "download": false
+    },
+    {
+      "id": "S11",
+      "title": "NICT 標準電波で送信する時刻符号",
+      "kind": "運用機関一次資料",
+      "url": "https://www.nict.go.jp/sts/jjy_signal.html",
+      "locator": "パルス幅・偶数パリティ・15/45分の特殊送信",
+      "download": false
+    },
+    {
+      "id": "S12",
+      "title": "NCH6100HV v1.0.0",
+      "kind": "設計者一次資料",
+      "url": "https://nixieclock.org/wp-content/uploads/2020/02/NIXIE-Power-Supply-Datasheet-EN-v1.0.0.pdf",
+      "locator": "PDF p.1 定格・SHDN、p.2 接続、p.3 外形",
+      "download": true
+    },
+    {
+      "id": "S13",
+      "title": "Arduino Nano A000005 User Manual",
+      "kind": "メーカー一次資料",
+      "url": "https://docs.arduino.cc/resources/datasheets/A000005-datasheet.pdf",
+      "locator": "5V・16MHz・メモリ・電源・ピン配置",
+      "download": true
+    },
+    {
+      "id": "S14",
+      "title": "Arduino Nano Full Pinout",
+      "kind": "メーカー一次資料",
+      "url": "https://docs.arduino.cc/resources/pinouts/A000005-full-pinout.pdf",
+      "locator": "PDF p.1-2 D2、SPI、A4/A5、5V端子。互換機の配列は別途照合",
+      "download": true
+    },
+    {
+      "id": "S15",
+      "title": "ATmega328P automotive datasheet",
+      "kind": "メーカー一次資料・車載版である点に注意",
+      "url": "https://ww1.microchip.com/downloads/en/devicedoc/atmel-7810-automotive-microcontrollers-atmega328p_datasheet.pdf",
+      "locator": "DC Characteristics。採用実機の型番・温度等級の非車載版照合は未完了",
+      "download": true
+    },
+    {
+      "id": "S16",
+      "title": "74HC14/74HCT14 Rev.10",
+      "kind": "メーカー一次資料",
+      "url": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT14.pdf",
+      "locator": "Pinning、PDF p.7 Transfer characteristics、p.4 入力漏れ",
+      "download": true
+    },
+    {
+      "id": "S17",
+      "title": "MPSA42/MPSA43 Rev.8",
+      "kind": "メーカー一次資料",
+      "url": "https://www.onsemi.com/pdf/datasheet/mpsa42-d.pdf",
+      "locator": "PDF p.1 300V・E/B/C端子、飽和特性。採用メーカー固定が必要",
+      "download": true
+    },
+    {
+      "id": "S18",
+      "title": "Sunny's NEON Lamp catalogue",
+      "kind": "供給元技術資料",
+      "url": "https://sunnyscorp.jp/cms/wp-content/uploads/2022/06/neon_lamp202206.pdf",
+      "locator": "NE-2とNE-2Hの電流・始動電圧差。供給品との同一性は未確認",
+      "download": true
+    },
+    {
+      "id": "S19",
+      "title": "Raspberry Pi Pico 秋月116132",
+      "kind": "販売情報・比較用",
+      "url": "https://akizukidenshi.com/catalog/g/g116132/",
+      "locator": "SC0915 税込800円・在庫表示",
+      "download": false
+    },
+    {
+      "id": "S20",
+      "title": "Maker Nano 秋月116282",
+      "kind": "販売情報・比較用",
+      "url": "https://akizukidenshi.com/catalog/g/g116282/",
+      "locator": "税込1680円・国内代替候補",
+      "download": false
+    },
+    {
+      "id": "S21",
+      "title": "AE-ATMEGA328-MINI 秋月110347",
+      "kind": "販売情報・比較用",
+      "url": "https://akizukidenshi.com/catalog/g/g110347/",
+      "locator": "税込950円・書込用USBシリアル等は別途",
+      "download": false
+    },
+    {
+      "id": "S22",
+      "title": "ATS012S-W120U 秋月114168",
+      "kind": "販売情報",
+      "url": "https://akizukidenshi.com/catalog/g/g114168/",
+      "locator": "税込980円・12V1A・5.5/2.1mmセンタープラス。安全認証資料は別途確認",
+      "download": false
+    },
+    {
+      "id": "S23",
+      "title": "KiCad 10 CLI reference",
+      "kind": "公式操作資料",
+      "url": "https://docs.kicad.org/10.0/en/cli/cli.html",
+      "locator": "macOS配置・ERC・DRC・Gerber・drill・netlist",
+      "download": false
+    },
+    {
+      "id": "S24",
+      "title": "KiCad macOS downloads",
+      "kind": "公式操作資料",
+      "url": "https://www.kicad.org/download/macos/",
+      "locator": "調査時掲載10.0.8。導入時再確認",
+      "download": false
+    },
+    {
+      "id": "S25",
+      "title": "KiCad Linux downloads",
+      "kind": "公式操作資料",
+      "url": "https://www.kicad.org/download/linux-distros/",
+      "locator": "Ubuntu向け配布経路・バージョン選定",
+      "download": false
+    },
+    {
+      "id": "S26",
+      "title": "KiCAD-MCP-Server stable",
+      "kind": "開発元資料・任意の外部ツール",
+      "url": "https://github.com/mixelpixx/KiCAD-MCP-Server/tree/1d204fe3384eb73c890bbe531538a6e735c40fe0",
+      "locator": "調査時stableのcommit。README Installation・setup-linux/macOS。未導入",
+      "download": false
+    },
+    {
+      "id": "S27",
+      "title": "Arduino CLI installation",
+      "kind": "公式操作資料",
+      "url": "https://docs.arduino.cc/arduino-cli/installation/",
+      "locator": "macOS/Linux導入。現環境では未実行",
+      "download": false
+    },
+    {
+      "id": "S28",
+      "title": "Arduino Nano processor selection",
+      "kind": "公式操作資料",
+      "url": "https://support.arduino.cc/hc/en-us/articles/4401874304274-Select-the-right-processor-for-Arduino-Nano",
+      "locator": "ATmega328P / Old Bootloader / ATmega168の違い",
+      "download": false
+    },
+    {
+      "id": "S29",
+      "title": "Adafruit RTClib",
+      "kind": "作者公開ライブラリ",
+      "url": "https://github.com/adafruit/RTClib/tree/5298434167b770c4602661d682e3b340d565073f",
+      "locator": "DS3231対応・ライセンスと依存は採用前に確認。未取り込み",
+      "download": false
+    },
+    {
+      "id": "S30",
+      "title": "STM32_NixieClock",
+      "kind": "作者公開設計",
+      "url": "https://github.com/wjklimek1/STM32_NixieClock",
+      "locator": "KiCadの制御/表示分離、DS3231接続の参考。MIT表記。未取り込み",
+      "download": false
+    },
+    {
+      "id": "S31",
+      "title": "Etsy参考外観",
+      "kind": "利用者指定デザイン・内容取得できず",
+      "url": "https://www.etsy.com/jp/listing/649531936/",
+      "locator": "アクセスエラー。外観は利用者の文章指定のみ反映",
+      "download": false
+    },
+    {
+      "id": "S32",
+      "title": "SN74HCT125 SCLS069G",
+      "kind": "メーカー一次資料",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hct125.pdf",
+      "locator": "PDF p.3 端子、p.4-5 TTL入力しきい値・入力漏れ。3V受信出力を5Vへ変換する候補",
+      "download": true
+    },
+    {
+      "id": "S33",
+      "title": "MCP1700 DS20001826F",
+      "kind": "メーカー一次資料・Phase 2追加",
+      "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP1700-Data-Sheet-20001826F.pdf",
+      "locator": "p.1 TO-92端子、p.3-5 電源・精度、p.29 MCP1700-3002E/TO。Web閲覧、ローカル取得未実施",
+      "download": false
+    },
+    {
+      "id": "S34",
+      "title": "KiCad schematic S-expression specification",
+      "kind": "公式操作資料・Phase 2追加",
+      "url": "https://dev-docs.kicad.org/en/file-formats/sexpr-schematic/",
+      "locator": "シンボルキャッシュ、階層シート、インスタンス、ワイヤ、グローバルラベル",
+      "download": false
+    },
+    {
+      "id": "S35",
+      "title": "OpenSCAD official cheatsheet",
+      "kind": "公式操作資料・ケース並行設計追加",
+      "url": "https://openscad.org/cheatsheet/",
+      "locator": "include、module、linear_extrude、difference、rotate、hull。OpenSCAD実行検査とは区別",
+      "download": false
+    },
+    {
+      "id": "S36",
+      "title": "Vishay 1N5817/18/19",
+      "kind": "メーカー一次資料・Phase 2追加",
+      "url": "https://www.vishay.com/docs/88525/1n5817.pdf",
+      "locator": "1N5819 40V/1A、DO-41、カソード帯。検索で資料を確認、直接取得はタイムアウト",
+      "download": false
+    },
+    {
+      "id": "S37",
+      "title": "Freerouting v2.5.0 CLI",
+      "kind": "開発元一次資料・control-r1追加",
+      "url": "https://github.com/freerouting/freerouting/blob/v2.5.0/docs/command_line_arguments.md",
+      "locator": "DSN/SES、headless、-da、user_data_path。公式releaseのJARをSHA-256照合して使用",
+      "download": false
+    },
+    {
+      "id": "S38",
+      "title": "Freerouting v2.5.0 settings",
+      "kind": "開発元一次資料・control-r1追加",
+      "url": "https://github.com/freerouting/freerouting/blob/v2.5.0/docs/settings.md",
+      "locator": "fanout/automatic_neckdown/autorouter/optimizer設定。結果はKiCadで再検査",
+      "download": false
+    },
+    {
+      "id": "S39",
+      "title": "KiCad libraries license",
+      "kind": "公式ライセンス・control-r1追加",
+      "url": "https://www.kicad.org/libraries/license/",
+      "locator": "CC-BY-SA 4.0と電子設計/生成ファイルへの例外。ライブラリ集の再配布とは区別",
+      "download": false
+    },
+    {
+      "id": "S40",
+      "title": "Keystone 1060 drawing",
+      "kind": "メーカー一次資料・control-r1追加",
+      "url": "https://www.keyelco.com/product-pdf.cfm?p=726",
+      "locator": "1060図面PDF。WebでPDF存在を確認、ローカル取得HTTP403。極性・寸法の原図/現物照合は未完了",
+      "download": false
+    },
+    {
+      "id": "S41",
+      "title": "Azul Zulu package metadata",
+      "kind": "配布元一次資料・control-r1追加",
+      "url": "https://api.azul.com/metadata/v1/zulu/packages/?java_version=25&os=macos&arch=aarch64&archive_type=tar.gz&java_package_type=jre&latest=true&release_status=ga&availability_types=CA",
+      "locator": "実施時のJRE25配布物を一時取得。UbuntuではOS/アーキテクチャを選び直す。実行版/ハッシュはHANDOFFに保存",
+      "download": false
+    }
+  ]
+}

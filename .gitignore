@@ -1,0 +1,10 @@
+.DS_Store
+.cache/
+build/
+.venv/
+__pycache__/
+*.pyc
+*.kicad_prl
+*.lck
+*-backups/
+fp-info-cache

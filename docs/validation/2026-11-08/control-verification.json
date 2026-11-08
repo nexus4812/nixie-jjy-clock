@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "kicad_version": "10.0.8",
+  "footprints": 58,
+  "circuit_components": 54,
+  "pads_checked": 219,
+  "tracks_and_vias": 866,
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "trace_segments": 802,
+  "vias": 64,
+  "minimum_track_width_mm": 0.2,
+  "rtc_keepouts_checked": 1,
+  "drc_types": {},
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "drc_ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "mechanical_holes": [
+    [
+      4.0,
+      51.0,
+      3.2
+    ],
+    [
+      96.0,
+      51.0,
+      3.2
+    ],
+    [
+      4.0,
+      4.0,
+      3.2
+    ],
+    [
+      96.0,
+      4.0,
+      3.2
+    ]
+  ],
+  "manufacturing_release": false,
+  "scope": "低電圧制御基板のみ。実物・部品定格/熱・HV表示/電源板・受信性能・ケース部品高さは未検証。"
+}

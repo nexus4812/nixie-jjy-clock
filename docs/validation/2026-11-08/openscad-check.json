@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "tube_centers_mm": [
+    [
+      -63.0,
+      -3,
+      48
+    ],
+    [
+      -21.0,
+      -3,
+      48
+    ],
+    [
+      21.0,
+      -3,
+      48
+    ],
+    [
+      63.0,
+      -3,
+      48
+    ]
+  ],
+  "display_plane_y_mm": 40,
+  "antenna_to_hv_envelope_mm": 103.407,
+  "scope": "OpenSCAD構文と出力、共通JSONの概略包絡検査。現物・公差・熱・固定方法・絶縁・受信は未検証。",
+  "manufacturing_release": false,
+  "openscad_cli": "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+  "commands": [
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "OpenSCAD version 2021.01\n"
+    },
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--hardwarnings",
+        "-o",
+        "/Users/my/Documents/nixie-jjy-clock/build/enclosure/assembly.csg",
+        "enclosure/clock.scad"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--hardwarnings",
+        "-o",
+        "/Users/my/Documents/nixie-jjy-clock/build/enclosure/front_2d.svg",
+        "-D",
+        "part=\"front_2d\"",
+        "enclosure/clock.scad"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Geometries in cache: 27\nGeometry cache size in bytes: 50992\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.007\n   Top level object is a 2D object:\n   Contours:       11\n"
+    },
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--hardwarnings",
+        "-o",
+        "/Users/my/Documents/nixie-jjy-clock/build/enclosure/rear_2d.svg",
+        "-D",
+        "part=\"rear_2d\"",
+        "enclosure/clock.scad"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Geometries in cache: 12\nGeometry cache size in bytes: 17760\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:00.000\n   Top level object is a 2D object:\n   Contours:        6\n"
+    },
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--hardwarnings",
+        "-o",
+        "/Users/my/Documents/nixie-jjy-clock/build/enclosure/shell.stl",
+        "-D",
+        "part=\"shell\"",
+        "enclosure/clock.scad"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Geometries in cache: 4\nGeometry cache size in bytes: 2912\nCGAL Polyhedrons in cache: 1\nCGAL cache size in bytes: 22224\nTotal rendering time: 0:00:00.029\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:       16\n   Halfedges:      48\n   Edges:          24\n   Halffacets:     20\n   Facets:         10\n   Volumes:         2\n"
+    },
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--hardwarnings",
+        "-o",
+        "/Users/my/Documents/nixie-jjy-clock/build/enclosure/hv_cover.stl",
+        "-D",
+        "part=\"hv_cover\"",
+        "enclosure/clock.scad"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Geometries in cache: 4\nGeometry cache size in bytes: 2912\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 44704\nTotal rendering time: 0:00:00.021\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:       16\n   Halfedges:      48\n   Edges:          24\n   Halffacets:     22\n   Facets:         11\n   Volumes:         2\n"
+    },
+    {
+      "command": [
+        "/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD",
+        "--hardwarnings",
+        "-o",
+        "/Users/my/Documents/nixie-jjy-clock/build/enclosure/assembly.png",
+        "--imgsize",
+        "1280,960",
+        "--viewall",
+        "--autocenter",
+        "--projection",
+        "o",
+        "--camera",
+        "0,45,42,65,0,25,370",
+        "enclosure/clock.scad"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Fontconfig warning: \"/Volumes/OpenSCAD/OpenSCAD-2021.01.app/Contents/Resources/fonts/fonts.conf\", line 84: unknown element \"blank\"\nUnable to revert mtime: /Library/Fonts\nCompiling design (CSG Products normalization)...\nNormalized CSG tree has 46 elements\nGeometries in cache: 69\nGeometry cache size in bytes: 564040\nCGAL Polyhedrons in cache: 0\nCGAL cache size in bytes: 0\nTotal rendering time: 0:00:01.052\n"
+    }
+  ]
+}

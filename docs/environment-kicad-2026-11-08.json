@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-11-08T09:09:15.894973+00:00",
+  "platform": "macOS-15.7.4-arm64-i386-64bit-Mach-O",
+  "system": "Darwin",
+  "machine": "arm64",
+  "python": "3.13.1 (main, Dec  3 2024, 17:59:52) [Clang 16.0.0 (clang-1600.0.26.4)]",
+  "tools": {
+    "git": "/usr/bin/git",
+    "curl": "/usr/bin/curl",
+    "cmake": null,
+    "kicad": null,
+    "pcbnew": null,
+    "eeschema": null,
+    "arduino-cli": null,
+    "node": "/usr/local/bin/node",
+    "npm": "/usr/local/bin/npm"
+  },
+  "kicad_cli": "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+  "pcbnew_in_this_python": false,
+  "mcp": "このスクリプトでは接続状態を検査しない",
+  "kicad_probes": [
+    {
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "10.0.8",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "Usage: kicad-cli [--version] [--help] {fp,jobset,pcb,sch,sym,version}\n\nOptional arguments:\n  -v, --version  バージョン情報を表示して終了 \n  -h, --help     ヘルプ メッセージを表示して終了する \n\nSubcommands:\n  fp            Footprint and Footprint Libraries\n  jobset        Jobset\n  pcb           PCB\n  sch           Schematics\n  sym           Symbol and Symbol Libraries\n  version       Reports the version info in various formats",
+      "stderr": ""
+    }
+  ]
+}

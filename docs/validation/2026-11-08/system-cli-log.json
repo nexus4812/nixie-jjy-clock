@@ -1,0 +1,67 @@
+[
+  {
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/phase2/erc.json",
+      "hardware/schematic/generated/nixie-jjy-clock.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "0 個の違反を検出しました\nDRC レポートを /Users/my/Documents/nixie-jjy-clock/build/phase2/erc.json に保存しました\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/phase2/clock.xml",
+      "hardware/schematic/generated/nixie-jjy-clock.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "bom",
+      "--fields",
+      "Reference,Value,Sources,OpenRisks,ReviewStatus,Footprint,QUANTITY",
+      "--labels",
+      "Reference,Value,Sources,OpenRisks,ReviewStatus,Footprint,Qty",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/phase2/bom.csv",
+      "hardware/schematic/generated/nixie-jjy-clock.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "'/Users/my/Documents/nixie-jjy-clock/build/phase2/bom.csv' に部品表 (BOM) を出力しました。\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  },
+  {
+    "command": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/Users/my/Documents/nixie-jjy-clock/build/phase2/schematic.pdf",
+      "hardware/schematic/generated/nixie-jjy-clock.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "'/Users/my/Documents/nixie-jjy-clock/build/phase2/schematic.pdf' にプロットしました。\n完了.\n",
+    "stderr": "Fontconfig error: Cannot load default config file: No such file: (null)\n"
+  }
+]

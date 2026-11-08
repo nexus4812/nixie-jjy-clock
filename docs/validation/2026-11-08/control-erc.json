@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-08T19:03:05",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/bbbf38c4-36d0-5edd-bffa-9fa8242fa2a4",
+            "violations": []
+        },
+        {
+            "path": "/電源・保護・HV停止制御/",
+            "uuid_path": "/bbbf38c4-36d0-5edd-bffa-9fa8242fa2a4/deaf366a-6787-5c30-9e45-3b921497d032",
+            "violations": []
+        },
+        {
+            "path": "/Arduino Nano・16bit静的BCD駆動/",
+            "uuid_path": "/bbbf38c4-36d0-5edd-bffa-9fa8242fa2a4/e3b411d6-3e5a-5ed0-a925-4730cdd032a6",
+            "violations": []
+        },
+        {
+            "path": "/DS3231・非充電バックアップ/",
+            "uuid_path": "/bbbf38c4-36d0-5edd-bffa-9fa8242fa2a4/a64bd32a-65ad-5e98-8501-f6c11e218c9f",
+            "violations": []
+        },
+        {
+            "path": "/JJY 3V電源・40/60kHz選局・µA出力バッファ/",
+            "uuid_path": "/bbbf38c4-36d0-5edd-bffa-9fa8242fa2a4/6c69dcd3-a37e-580f-be65-a1688ab6d512",
+            "violations": []
+        },
+        {
+            "path": "/背面操作・JJY状態表示/",
+            "uuid_path": "/bbbf38c4-36d0-5edd-bffa-9fa8242fa2a4/933810ec-63f7-5ed9-968d-c203dde47aba",
+            "violations": []
+        }
+    ],
+    "source": "control-board.kicad_sch"
+}
