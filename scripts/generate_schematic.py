@@ -143,7 +143,7 @@ def main():
     global PROJECT
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
-    parser.add_argument("--variant", choices=["system", "control"], default="system")
+    parser.add_argument("--variant", choices=["system", "control", "display", "colon", "power"], default="system")
     args = parser.parse_args()
     specification = importlib.util.spec_from_file_location("clock_design", ROOT / "hardware/schematic_design.py")
     design = importlib.util.module_from_spec(specification)
@@ -157,9 +157,19 @@ def main():
             if selected:
                 selected_sheets.append({**original, "components": selected})
         design.SHEETS = selected_sheets
-    output = ROOT / ("hardware/pcb/generated" if control_variant else "hardware/schematic/generated")
+    hv_variant = args.variant in ("display", "colon", "power")
+    if hv_variant:
+        PROJECT = args.variant + "-board"
+        board_layout = design.BOARD_LAYOUTS[args.variant]
+        selected_sheets = []
+        for original in design.SHEETS:
+            selected = [component for component in original["components"] if component.get("board") == args.variant or component["reference"] in board_layout["flags"]]
+            if selected:
+                selected_sheets.append({**original, "components": selected})
+        design.SHEETS = selected_sheets
+    output = ROOT / ("hardware/pcb/generated" if control_variant else f"hardware/pcb/generated_{args.variant}" if hv_variant else "hardware/schematic/generated")
     output.mkdir(parents=True, exist_ok=True)
-    root_id = identity("control/root" if control_variant else "root")
+    root_id = identity("control/root" if control_variant else f"{args.variant}/root" if hv_variant else "root")
     root = header(root_id, "JJYニキシー管時計・回路検討初版", "A3")
     root.append('(lib_symbols)')
     root.extend([text("JJY / IN-12B ×4 / Arduino Nano 5V / DS3231", 20, 20, 2.0),
@@ -191,6 +201,34 @@ def main():
             "microvia_diameter": 0.3, "microvia_drill": 0.1}], "netclass_assignments": {}, "netclass_patterns": []}
         footprint_libraries = sorted({"MountingHole", *[placement["footprint"].split(":")[0] for placement in design.CONTROL_LAYOUT["components"].values()]})
         artifacts["fp-lib-table"] = '(fp_lib_table (version 7) ' + ' '.join(f'(lib (name {quoted(name)}) (type "KiCad") (uri "${{KICAD10_FOOTPRINT_DIR}}/{name}.pretty") (options "") (descr "KiCad 10 standard library"))' for name in footprint_libraries) + ')\n'
+    if hv_variant:
+        routing = board_layout["routing"]
+        project["board"] = {"design_settings": {"rules": {
+            "min_clearance": routing["clearance"], "min_track_width": routing["minimum_track_width"], "min_copper_edge_clearance": 0.5,
+            "min_hole_clearance": 0.25, "min_hole_to_hole": 0.25,
+            "min_through_hole_diameter": 0.3, "min_via_annular_width": 0.15, "min_via_diameter": 0.6,
+            "min_text_height": 0.8, "min_text_thickness": 0.08}, "drc_exclusions": []}}
+        def netclass(name, clearance):
+            return {"name": name, "clearance": clearance, "track_width": routing["nominal_track_width"], "via_diameter": routing["via_diameter"], "via_drill": routing["via_drill"],
+                    "diff_pair_width": 0.25, "diff_pair_gap": 0.25, "diff_pair_via_gap": 0.25, "microvia_diameter": 0.3, "microvia_drill": 0.1}
+        project["net_settings"] = {"meta": {"version": 4}, "classes": [netclass("Default", routing["clearance"]), netclass("HV", routing["hv_clearance"]), netclass("CATHODE", routing["clearance"])],
+            "netclass_assignments": {}, "netclass_patterns": [*[{"netclass": "HV", "pattern": name} for name in board_layout["hv_nets"]], *[{"netclass": "CATHODE", "pattern": name} for name in board_layout["cathode_patterns"]]]}
+        rules = ['(version 1)',
+                 f'(rule hv_to_lv (constraint clearance (min {routing["hv_lv_clearance"]}mm)) (condition "A.hasNetclass(\'HV\') && !B.hasNetclass(\'HV\') && !B.hasNetclass(\'CATHODE\')"))',
+                 f'(rule hv_to_cathode (constraint clearance (min {routing["hv_clearance"]}mm)) (condition "A.hasNetclass(\'HV\') && B.hasNetclass(\'CATHODE\')"))',
+                 f'(rule cathode_to_lv (constraint clearance (min {routing["cathode_lv_clearance"]}mm)) (condition "A.hasNetclass(\'CATHODE\') && !B.hasNetclass(\'CATHODE\') && !B.hasNetclass(\'HV\')"))',
+                 f'(rule hv_edge (constraint edge_clearance (min {routing["hv_edge_clearance"]}mm)) (condition "A.hasNetclass(\'HV\')"))',
+                 f'(rule hv_hole (constraint hole_clearance (min {routing["hv_hole_clearance"]}mm)) (condition "A.hasNetclass(\'HV\') && B.Pad_Type == \'NPTH, mechanical\'"))']
+        for exception in board_layout.get("package_exceptions", []):
+            rules.append(f'# {exception["reason"]}')
+            rules.append(f'(rule package_{exception["reference"]} (constraint clearance (min {exception["clearance"]}mm)) (condition "A.NetName == \'{exception["net"]}\' && B.NetName == \'{exception["other_net"]}\'"))')
+        artifacts[PROJECT + ".kicad_dru"] = "\n".join(rules) + "\n"
+        libraries = sorted({"MountingHole", *[placement["footprint"].split(":")[0] for placement in board_layout["components"].values()]} - {"JJYClock"})
+        entries = [f'(lib (name {quoted(name)}) (type "KiCad") (uri "${{KICAD10_FOOTPRINT_DIR}}/{name}.pretty") (options "") (descr "KiCad 10 standard library"))' for name in libraries]
+        entries.append('(lib (name "JJYClock") (type "KiCad") (uri "${KIPRJMOD}/../JJYClock.pretty") (options "") (descr "Project candidate footprints; not verified against parts"))')
+        artifacts["fp-lib-table"] = '(fp_lib_table (version 7) ' + ' '.join(entries) + ')\n'
+    if args.variant == "system":
+        artifacts["fp-lib-table"] = '(fp_lib_table (version 7) (lib (name "JJYClock") (type "KiCad") (uri "${KIPRJMOD}/../../pcb/JJYClock.pretty") (options "") (descr "Project candidate footprints; not verified against parts")))\n'
     artifacts[PROJECT + ".kicad_pro"] = json.dumps(project, indent=2) + "\n"
     artifacts["JJYClock.kicad_sym"] = '(kicad_symbol_lib (version 20231120) (generator "nixie_jjy_clock")\n' + "\n".join(symbol_definition(name, definition) for name, definition in sorted(design.SYMBOLS.items())) + ')\n'
     artifacts["sym-lib-table"] = '(sym_lib_table (version 7) (lib (name "JJYClock") (type "KiCad") (uri "${KIPRJMOD}/JJYClock.kicad_sym") (options "") (descr "Project-specific reviewed pin maps")))\n'

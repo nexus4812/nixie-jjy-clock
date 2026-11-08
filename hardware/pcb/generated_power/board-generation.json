@@ -1,0 +1,383 @@
+{
+  "status": "ROUTED_CANDIDATE_NOT_FOR_MANUFACTURE",
+  "revision": "power-r1",
+  "layout_sha256": "a0b6e0498031b240e95cb3434ec805d4b1ed6a3f2dd3660b0401cb279d6be002",
+  "mechanical_sha256": "ad1ad668798e220fcee5c1cdb3e5d12154a8be6403f1569c8be29b2554062733",
+  "footprints": [
+    {
+      "reference": "J1",
+      "library_id": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "library_file_sha256": "db267aa991d5a9d6f37a7118ea3649762027773687cf65df88339d984a25edb3",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        10,
+        5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "F1",
+      "library_id": "Fuse:Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal",
+      "library_file_sha256": "a54b8eb21b5dc0686ddd908609ce6c58f06b1df75811236aba930ab3725b53e6",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        6,
+        15
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "D1",
+      "library_id": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "library_file_sha256": "f7a156e9b80a77d5d232d68b3f1b1e81b7bf99703017f9124da667d1d31af41e",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        6,
+        26
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "C1",
+      "library_id": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+      "library_file_sha256": "e7256cc327aa5d1bc5410a487248fa9b5e3d25153b2315201d5da5108cb49580",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        20,
+        7
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "C2",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        28,
+        7
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "J47",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "library_file_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        6,
+        31
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "J43",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "library_file_sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        17,
+        31
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "J44",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "library_file_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        6,
+        37
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "J65",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "library_file_sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        17,
+        37
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "JP2",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "library_file_sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        6,
+        43
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "J48",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "library_file_sha256": "e5f24b6fea852f86171042806da48490229c9c8025b6d266b8cad6485b26e79f",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        17,
+        43
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "R1",
+      "library_id": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "library_file_sha256": "58b4bad35c78cb7f33c76c99b8d8f08bb836b0ba742bcbbaffb6f7f73e5ffbe6",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        6,
+        48
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "R2",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        19,
+        47.5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "R3",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        24,
+        47.5
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "Q1",
+      "library_id": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+      "library_file_sha256": "dec3d73e5b87d0ca4d957119b74f768649fa1140e06cc0a5bd53a87885e4d602",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        25,
+        41
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "J49",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        35,
+        10
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "R4",
+      "library_id": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+      "library_file_sha256": "5a041acbc89b67825c2c2014f2338917607aa25f14a8ca623ef79a0fd365afcc",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        44,
+        34
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "R5",
+      "library_id": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+      "library_file_sha256": "5a041acbc89b67825c2c2014f2338917607aa25f14a8ca623ef79a0fd365afcc",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        60,
+        34
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "J2",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        35,
+        26
+      ],
+      "rotation_deg": 90,
+      "side": "F"
+    },
+    {
+      "reference": "J60",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        17,
+        55.5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "J61",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30.5,
+        55.5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "J62",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        44,
+        55.5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "J63",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        57.5,
+        55.5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "J64",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        71,
+        55.5
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    }
+  ],
+  "layers": 2,
+  "manufacturing_release": false,
+  "routing": {
+    "router": "Freerouting 2.5.0 JVM",
+    "jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+    "dsn_sha256": "88527991723c6123e8157829456a60844fce046b8d5ecf05704335463db93c45",
+    "ses_sha256": "3f1916b6604b1f95b05b8b25949bf34c452e8d51fd140dae38eb0275737e4fd9"
+  },
+  "tracks_widened_to_minimum": 9,
+  "dangling_vias_removed": 0,
+  "tracks_and_vias": 125
+}

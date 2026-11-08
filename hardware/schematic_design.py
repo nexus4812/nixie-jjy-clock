@@ -5,6 +5,7 @@ from pathlib import Path
 
 
 CONTROL_LAYOUT = json.loads((Path(__file__).parent / "pcb/control_layout.json").read_text(encoding="utf-8"))
+BOARD_LAYOUTS = {name: json.loads((Path(__file__).parent / f"pcb/{name}_layout.json").read_text(encoding="utf-8")) for name in ("display", "colon", "power")}
 
 def pin(number, name, kind="passive"):
     return {"number": str(number), "name": name, "kind": kind}
@@ -14,6 +15,7 @@ SYMBOLS = {
     "R": {"style": "resistor", "left": [pin(1, "~")], "right": [pin(2, "~")], "sources": []},
     "C": {"style": "capacitor", "left": [pin(1, "~")], "right": [pin(2, "~")], "sources": []},
     "D": {"style": "diode", "left": [pin(1, "K")], "right": [pin(2, "A")], "sources": ["S36"]},
+    "Zener": {"style": "diode", "left": [pin(1, "K")], "right": [pin(2, "A")], "sources": ["S03"], "risks": ["R02"]},
     "LED": {"style": "led", "left": [pin(1, "K")], "right": [pin(2, "A")], "sources": []},
     "Switch": {"style": "switch", "left": [pin(1, "~")], "right": [pin(2, "~")], "sources": []},
     "Fuse": {"style": "fuse", "left": [pin(1, "~")], "right": [pin(2, "~")], "sources": []},
@@ -48,15 +50,22 @@ for count in (1, 2, 3, 4, 5, 6):
     SYMBOLS[f"Conn_{count}"] = {"left": [pin(index, str(index)) for index in range(1, count + 1)], "right": [], "sources": [], "risks": ["R04"]}
 
 
-def component(reference, symbol, value, nets, sources=None, risks=None, note=""):
+def component(reference, symbol, value, nets, sources=None, risks=None, note="", layout_reference=None, board_override=None):
     result = {"reference": reference, "symbol": symbol, "value": value,
             "nets": {str(number): net for number, net in nets.items()},
             "sources": sources if sources is not None else SYMBOLS[symbol].get("sources", []),
             "risks": risks if risks is not None else SYMBOLS[symbol].get("risks", []), "note": note}
     placement = CONTROL_LAYOUT["components"].get(reference)
+    board_name = "control"
+    if not placement:
+        for name, layout in BOARD_LAYOUTS.items():
+            placement = layout["components"].get(layout_reference or reference)
+            if placement:
+                board_name = name
+                break
     if placement:
         result["footprint"] = placement["footprint"]
-        result["board"] = "control"
+        result["board"] = board_override or board_name
         result["risks"] = list(dict.fromkeys([*result["risks"], "R04"]))
         if placement.get("mpn"):
             result["value"] = placement["mpn"]
@@ -95,6 +104,14 @@ sheet("power", "電源・保護・HV停止制御", "市販絶縁12V DCのみ。J
     two("R4", "R", "110k_0.5W_HV", "HV_RAW", "HV_BLEED_MID", risks=["R06", "R08"]),
     two("R5", "R", "110k_0.5W_HV", "HV_BLEED_MID", "GND", risks=["R06", "R08"]),
     component("J2", "Conn_2", "HV_RAW_GUARDED_TP", {1: "HV_RAW", 2: "GND"}, risks=["R08"]),
+    component("J43", "Conn_2", "TO_CONTROL_J41", {1: "5V_BUCK", 2: "GND"}, risks=["R11"]),
+    component("J44", "Conn_3", "FROM_CONTROL_J42", {1: "GND", 2: "HV_ENABLE", 3: "COLON_ENABLE"}, risks=["R06", "R08"]),
+    component("J47", "Conn_3", "TO_BUCK_MODULE", {1: "12V_PROTECTED", 2: "GND", 3: "5V_BUCK"}, risks=["R06"]),
+    component("J48", "Conn_3", "TO_HV_MODULE_LV", {1: "12V_HV", 2: "GND", 3: "HV_SHDN"}, risks=["R06"]),
+    component("J49", "Conn_2", "FROM_HV_MODULE", {1: "HV_RAW", 2: "GND"}, risks=["R06", "R08"]),
+    *[component(f"J{60 + index}", "Conn_2", f"HV_TO_DIGIT{index}", {1: "HV_RAW", 2: "GND"}, risks=["R04", "R08"]) for index in range(4)],
+    component("J64", "Conn_2", "HV_TO_COLON", {1: "HV_RAW", 2: "GND"}, risks=["R04", "R08"]),
+    component("J65", "Conn_2", "COLON_ENABLE_OUT", {1: "GND", 2: "COLON_ENABLE"}),
     component("#FLG01", "PWR_FLAG", "12V_AFTER_PROTECTION", {1: "12V_PROTECTED"}),
     component("#FLG02", "PWR_FLAG", "SUPPLY_RETURN", {1: "GND"}),
     component("#FLG03", "PWR_FLAG", "5V_AFTER_MODE_JUMPER", {1: "+5V"}),
@@ -169,15 +186,23 @@ for index in range(4):
     tube_nets = {1: f"DIGIT{index}_ANODE", 12: None}
     tube_nets.update({number: cathodes[digit] for digit, number in enumerate([2, 11, 10, 9, 8, 7, 6, 5, 4, 3])})
     offset = 100 + 10 * index
-    sheet(f"display_{index}", f"表示子{index + 1}・IN-12Bソケット候補", "未解決R01/R02: HV電圧・抵抗・非選択出力保護が未確定。これは接続検討図であり通電・発注用ではない。", [
-        component(f"U{10 + index}", "K155ID1", "K155ID1_R02_HOLD", driver_nets),
-        component(f"V{1 + index}", "IN_12B", "IN-12B_SOCKET_R04", tube_nets),
-        two(f"R{offset}", "R", "TBD_R01_ANODE", "HV_RAW", f"DIGIT{index}_ANODE", risks=["R01", "R02", "R08"]),
-        two(f"C{offset}", "C", "100n_50V", "+5V", "GND"),
-        component(f"J{10 + index}", "Conn_6", f"DIGIT{index}_LOGIC", {1: "+5V", 2: "GND", **{bit + 3: f"BCD{index}_{bit}" for bit in range(4)}}),
-        component(f"J{20 + index}", "Conn_2", f"DIGIT{index}_HV_GUARDED", {1: "HV_RAW", 2: "GND"}, risks=["R04", "R08"]),
-        two(f"R{offset + 1}", "R", "1M_0.25W_HV", "HV_RAW", "GND", risks=["R06", "R08"], note="配線分離後の子板放電。アノード側追加容量なし。最終容量と経路を要確認"),
-    ])
+    # 4桁は同一基板。桁0を配置の基準にし、桁1〜3は同じフットプリントの複製として扱う。
+    def shared(*positional, canonical, **metadata):
+        return component(*positional, layout_reference=None if index == 0 else canonical, board_override=None if index == 0 else "display_copy", **metadata)
+    clamp = f"DIGIT{index}_CLAMP"
+    parts = [
+        shared(f"U{10 + index}", "K155ID1", "K155ID1_R02_HOLD", driver_nets, canonical="U10"),
+        shared(f"V{1 + index}", "IN_12B", "IN-12B_SOCKET_R04", tube_nets, canonical="V1"),
+        shared(f"R{offset}", "R", "18k_0.5W_R01_CANDIDATE", {1: "HV_RAW", 2: f"DIGIT{index}_ANODE"}, canonical="R100", risks=["R01", "R02", "R08"], note="HV200V・維持145V仮定で約3.0mA。維持電圧は未実測"),
+        shared(f"C{offset}", "C", "100n_50V", {1: "+5V", 2: "GND"}, canonical="C100"),
+        shared(f"J{10 + index}", "Conn_6", f"DIGIT{index}_LOGIC", {1: "+5V", 2: "GND", **{bit + 3: f"BCD{index}_{bit}" for bit in range(4)}}, canonical="J10"),
+        shared(f"J{20 + index}", "Conn_2", f"DIGIT{index}_HV_GUARDED", {1: "HV_RAW", 2: "GND"}, canonical="J20", risks=["R04", "R08"]),
+        shared(f"R{offset + 1}", "R", "1M_0.25W_HV", {1: "HV_RAW", 2: "GND"}, canonical="R101", risks=["R06", "R08"], note="配線分離後の子板放電。アノード側追加容量なし。最終容量と経路を要確認"),
+        shared(f"Z{10 + index}", "Zener", "ZENER_47V_R02", {1: clamp, 2: "GND"}, canonical="Z10", risks=["R02", "R08"], note="S03の閉出力55V以下に合わせた共通クランプ候補。実測前"),
+    ]
+    for digit in range(10):
+        parts.append(shared(f"D{offset + digit}", "D", "CLAMP_DIODE_100V_R02", {1: clamp, 2: cathodes[digit]}, canonical=f"D{100 + digit}", sources=["S03"], risks=["R02", "R04"]))
+    sheet(f"display_{index}", f"表示子{index + 1}・IN-12Bソケット候補", "R01/R02未閉：HV200V候補と47Vクランプは計算上の候補で未実測。接続検討図であり通電・発注用ではない。", parts)
 
 colon = []
 for index in range(2):
@@ -189,7 +214,7 @@ colon.extend([
     component("Q4", "MPSA42", "MPSA42", {1: "GND", 2: "COLON_BASE", 3: "NEON_CATHODES"}),
     two("R152", "R", "10k", "COLON_ENABLE", "COLON_BASE"),
     two("R153", "R", "100k", "COLON_BASE", "GND"),
-    two("R154", "R", "1M_0.25W_HV", "HV_RAW", "GND", risks=["R06", "R08"]),
-    component("J30", "Conn_3", "COLON_HARNESS_GUARDED", {1: "HV_RAW", 2: "GND", 3: "COLON_ENABLE"}, risks=["R04", "R08"]),
+    component("J30", "Conn_2", "COLON_HV_GUARDED", {1: "HV_RAW", 2: None}, risks=["R04", "R08"]),
+    component("J31", "Conn_2", "COLON_ENABLE_LV", {1: "GND", 2: "COLON_ENABLE"}),
 ])
-sheet("colon", "橙色ネオン2灯・個別電流制限", "ネオン各枝に独立抵抗。維持/始動電圧・暗所特性と抵抗定格はR07で確認。HVと信号のコネクター混在は要配置レビュー。", colon)
+sheet("colon", "橙色ネオン2灯・個別電流制限", "ネオン各枝に独立抵抗。維持/始動電圧・暗所特性と抵抗定格はR07で確認。HVと信号のコネクターは分離済み。", colon)

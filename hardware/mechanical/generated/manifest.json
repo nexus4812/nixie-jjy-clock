@@ -164,11 +164,43 @@
       ]
     },
     {
+      "id": "power",
+      "file": "power.kicad_pcb",
+      "size_mm": [
+        90,
+        60
+      ],
+      "assembly_center_mm": [
+        62,
+        75,
+        16
+      ],
+      "assembly_plane": "XY",
+      "holes_pcb_mm": [
+        [
+          4.0,
+          56.0
+        ],
+        [
+          86.0,
+          56.0
+        ],
+        [
+          4.0,
+          4.0
+        ],
+        [
+          86.0,
+          4.0
+        ]
+      ]
+    },
+    {
       "id": "colon",
       "file": "colon.kicad_pcb",
       "size_mm": [
-        14,
-        42
+        16,
+        60
       ],
       "assembly_center_mm": [
         0,
@@ -178,11 +210,11 @@
       "assembly_plane": "XZ",
       "holes_pcb_mm": [
         [
-          7.0,
-          38.0
+          8.0,
+          56.0
         ],
         [
-          7.0,
+          8.0,
           4.0
         ]
       ]

@@ -1,0 +1,290 @@
+{
+ "revision": "colon-r1",
+ "status": "候補フットプリント・現物未照合・製造不可",
+ "mechanical_key": "colon_pcb",
+ "flags": [],
+ "routing": {
+  "clearance": 0.3,
+  "autorouter_clearance": 0.35,
+  "nominal_track_width": 0.3,
+  "minimum_track_width": 0.25,
+  "via_diameter": 0.8,
+  "via_drill": 0.4,
+  "hv_clearance": 1.5,
+  "hv_lv_clearance": 2.5,
+  "cathode_lv_clearance": 0.9,
+  "hv_edge_clearance": 1.5,
+  "hv_hole_clearance": 2.5,
+  "dsn_boundary_inset": 1.2
+ },
+ "hv_nets": [
+  "HV_RAW",
+  "NEON0_ANODE",
+  "NEON1_ANODE",
+  "NEON_CATHODES"
+ ],
+ "cathode_patterns": [],
+ "package_exceptions": [
+  {
+   "reference": "Q4",
+   "net": "NEON_CATHODES",
+   "other_net": "COLON_BASE",
+   "clearance": 1.0,
+   "reason": "TO-92のコレクター/ベース端子間隔の制約。R08で現物評価"
+  }
+ ],
+ "silkscreen": [
+  {
+   "text": "HV",
+   "at": [
+    2.2,
+    3
+   ],
+   "layer": "B"
+  }
+ ],
+ "seed_tracks": [
+  {
+   "net": "NEON_CATHODES",
+   "layer": "F.Cu",
+   "width": 0.3,
+   "points": [
+    [
+     8,
+     24.54
+    ],
+    [
+     10.6,
+     27
+    ],
+    [
+     10.6,
+     38
+    ],
+    [
+     8,
+     40.54
+    ],
+    [
+     5.42,
+     44
+    ],
+    [
+     5.42,
+     49
+    ]
+   ]
+  },
+  {
+   "net": "HV_RAW",
+   "layer": "F.Cu",
+   "width": 0.3,
+   "points": [
+    [
+     5.46,
+     11.5
+    ],
+    [
+     5.46,
+     15.5
+    ],
+    [
+     8,
+     15.5
+    ],
+    [
+     13.4,
+     22
+    ]
+   ]
+  },
+  {
+   "net": "HV_RAW",
+   "layer": "B.Cu",
+   "width": 0.3,
+   "points": [
+    [
+     13.4,
+     22
+    ],
+    [
+     10.8,
+     24
+    ],
+    [
+     10.8,
+     30
+    ],
+    [
+     13.4,
+     32.2
+    ]
+   ]
+  },
+  {
+   "net": "NEON0_ANODE",
+   "layer": "F.Cu",
+   "width": 0.3,
+   "points": [
+    [
+     13.4,
+     27.08
+    ],
+    [
+     12,
+     25
+    ],
+    [
+     10.9,
+     23
+    ],
+    [
+     10.9,
+     22
+    ],
+    [
+     9.9,
+     22
+    ],
+    [
+     8,
+     19.46
+    ]
+   ]
+  },
+  {
+   "net": "NEON1_ANODE",
+   "layer": "B.Cu",
+   "width": 0.3,
+   "points": [
+    [
+     13.4,
+     37.28
+    ],
+    [
+     10,
+     36.5
+    ],
+    [
+     8,
+     35.46
+    ]
+   ]
+  },
+  {
+   "net": "COLON_BASE",
+   "layer": "B.Cu",
+   "width": 0.3,
+   "points": [
+    [
+     7.96,
+     49
+    ],
+    [
+     7.96,
+     51.5
+    ],
+    [
+     12.6,
+     51.5
+    ],
+    [
+     13.0,
+     49.59
+    ],
+    [
+     14.2,
+     49.59
+    ],
+    [
+     13.41,
+     45
+    ]
+   ]
+  }
+ ],
+ "components": {
+  "NE1": {
+   "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+   "at": [
+    8,
+    19.46
+   ],
+   "rotation": 270,
+   "side": "F",
+   "note": "ネオン現物未定(R07)。リード間隔5.08mm候補"
+  },
+  "NE2": {
+   "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+   "at": [
+    8,
+    35.46
+   ],
+   "rotation": 270,
+   "side": "F"
+  },
+  "J30": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    5.46,
+    11.5
+   ],
+   "rotation": 180,
+   "side": "B"
+  },
+  "R150": {
+   "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+   "at": [
+    13.4,
+    22
+   ],
+   "rotation": 270,
+   "side": "B"
+  },
+  "R151": {
+   "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+   "at": [
+    13.4,
+    32.2
+   ],
+   "rotation": 270,
+   "side": "B"
+  },
+  "Q4": {
+   "footprint": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+   "at": [
+    10.5,
+    49
+   ],
+   "rotation": 0,
+   "side": "B"
+  },
+  "R152": {
+   "footprint": "Resistor_SMD:R_0805_2012Metric",
+   "at": [
+    14.2,
+    50.5
+   ],
+   "rotation": 90,
+   "side": "B"
+  },
+  "R153": {
+   "footprint": "Resistor_SMD:R_0805_2012Metric",
+   "at": [
+    12.5,
+    45
+   ],
+   "rotation": 0,
+   "side": "B"
+  },
+  "J31": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+   "at": [
+    13,
+    54
+   ],
+   "rotation": 0,
+   "side": "B"
+  }
+ }
+}

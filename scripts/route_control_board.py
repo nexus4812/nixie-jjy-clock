@@ -23,16 +23,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--java", default=os.environ.get("JAVA_EXECUTABLE") or shutil.which("java"))
     parser.add_argument("--jar", type=Path, default=Path(os.environ.get("FREEROUTING_JAR", ROOT / ".cache/freerouting-2.5.0.jar")))
+    parser.add_argument("--board", choices=["control", "display", "colon", "power"], default="control")
     args = parser.parse_args()
     if not args.java or not args.jar.is_file():
         parser.error("Java 25の実行ファイルとFreerouting 2.5.0 JARを--java/--jarで指定してください")
     if digest(args.jar) != JAR_SHA256:
         parser.error("公式2.5.0 JARのSHA-256と不一致")
-    directory = ROOT / "build/control-board"
+    stem = args.board + "-board"
+    directory = ROOT / "build" / stem
     directory.mkdir(parents=True, exist_ok=True)
-    dsn = directory / "control-board.dsn"
-    session = directory / "control-board.ses"
-    receipt = directory / "control-board.routing.json"
+    dsn = directory / (stem + ".dsn")
+    session = directory / (stem + ".ses")
+    receipt = directory / (stem + ".routing.json")
     if not dsn.is_file():
         parser.error("generate_control_board.pyによるDSN出力が先に必要です")
     version = subprocess.run([args.java, "-version"], capture_output=True, text=True, timeout=15)

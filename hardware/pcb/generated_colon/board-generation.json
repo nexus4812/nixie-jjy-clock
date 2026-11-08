@@ -1,0 +1,154 @@
+{
+  "status": "ROUTED_CANDIDATE_NOT_FOR_MANUFACTURE",
+  "revision": "colon-r1",
+  "layout_sha256": "563031c722ac75ac88ba146bd22e8cc0b97a5eb07dd11c59387b3429a58d21eb",
+  "mechanical_sha256": "ad1ad668798e220fcee5c1cdb3e5d12154a8be6403f1569c8be29b2554062733",
+  "footprints": [
+    {
+      "reference": "NE1",
+      "library_id": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+      "library_file_sha256": "83f010a467ad9ee0216aa2b29ff19a7887b5d6bea0ea28f3b1206f57704d0a88",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        8,
+        19.46
+      ],
+      "rotation_deg": 270,
+      "side": "F"
+    },
+    {
+      "reference": "NE2",
+      "library_id": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+      "library_file_sha256": "83f010a467ad9ee0216aa2b29ff19a7887b5d6bea0ea28f3b1206f57704d0a88",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        8,
+        35.46
+      ],
+      "rotation_deg": 270,
+      "side": "F"
+    },
+    {
+      "reference": "J30",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        5.46,
+        11.5
+      ],
+      "rotation_deg": 180,
+      "side": "B"
+    },
+    {
+      "reference": "R150",
+      "library_id": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+      "library_file_sha256": "83f010a467ad9ee0216aa2b29ff19a7887b5d6bea0ea28f3b1206f57704d0a88",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        13.4,
+        22
+      ],
+      "rotation_deg": 270,
+      "side": "B"
+    },
+    {
+      "reference": "R151",
+      "library_id": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical",
+      "library_file_sha256": "83f010a467ad9ee0216aa2b29ff19a7887b5d6bea0ea28f3b1206f57704d0a88",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        13.4,
+        32.2
+      ],
+      "rotation_deg": 270,
+      "side": "B"
+    },
+    {
+      "reference": "Q4",
+      "library_id": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+      "library_file_sha256": "dec3d73e5b87d0ca4d957119b74f768649fa1140e06cc0a5bd53a87885e4d602",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "at_mm": [
+        10.5,
+        49
+      ],
+      "rotation_deg": 0,
+      "side": "B"
+    },
+    {
+      "reference": "R152",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        14.2,
+        50.5
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "R153",
+      "library_id": "Resistor_SMD:R_0805_2012Metric",
+      "library_file_sha256": "f050b6a50cc7e6f86291fb7aa8f87b0d02255e21cfbddf291cdccc87e5889794",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        12.5,
+        45
+      ],
+      "rotation_deg": 0,
+      "side": "B"
+    },
+    {
+      "reference": "J31",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "library_file_sha256": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        13,
+        54
+      ],
+      "rotation_deg": 0,
+      "side": "B"
+    }
+  ],
+  "layers": 2,
+  "manufacturing_release": false,
+  "routing": {
+    "router": "Freerouting 2.5.0 JVM",
+    "jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+    "dsn_sha256": "3b8188001a03d0343ddf674b2b3266d4d1db98a53498e937845fd7c3f15dd641",
+    "ses_sha256": "ae1ef98686844cf9ed70794cebb2563b73689987d3a35cb2f5385d6ecc1a2c38"
+  },
+  "tracks_widened_to_minimum": 0,
+  "tracks_and_vias": 37
+}

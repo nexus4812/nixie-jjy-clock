@@ -28,7 +28,7 @@ def board_definitions(layout):
         board = dict(layout["display_pcb"])
         board.update({"id": f"display_{index}", "center": [center[0], display_plane(layout), center[2]], "plane": "XZ"})
         boards.append(board)
-    for key, plane in (("control_pcb", "XY"), ("colon_pcb", "XZ")):
+    for key, plane in (("control_pcb", "XY"), ("power_pcb", "XY"), ("colon_pcb", "XZ")):
         board = dict(layout[key])
         if key == "colon_pcb":
             board["center"] = [layout["colon"]["center_x"], board["plane_y"], layout["tube"]["center_z"]]
@@ -96,6 +96,8 @@ def validate(layout):
             if limits[0] < inner[axis][0] or limits[1] > inner[axis][1]:
                 errors.append(f"ケース内寸外: {name}")
         for board in boards:
+            if name == "HVカバー予約枠" and board["id"] == "power":
+                continue  # HVモジュールは電源板の上に固定する。電源板自体のカバーはR08/R16で別途検討
             distances = [max(first[0] - second[1], second[0] - first[1], 0)
                          for first, second in zip(envelope, board_bounds(board))]
             if math.sqrt(sum(value * value for value in distances)) < clearance:

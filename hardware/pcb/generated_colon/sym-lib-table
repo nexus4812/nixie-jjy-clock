@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "JJYClock") (type "KiCad") (uri "${KIPRJMOD}/JJYClock.kicad_sym") (options "") (descr "Project-specific reviewed pin maps")))

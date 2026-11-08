@@ -26,4 +26,4 @@ Phase 2追加：`scripts/check_hardware.py` は実際のKiCad出力と回路定�
 
 ## control-r1追加検査
 
-KiCad対応Pythonで `scripts/check_control_board.py` を実行する。制御板ERC、DRC（警告含む）、回路図等価性、全219パッドのネット、候補フットプリント/配置、共有外形/板厚/穴、RTC禁止領域を確認する。製造承認は常にfalse。`scripts/route_control_board.py` と取り込みスクリプトはDSN/SESのハッシュ対応を確認する。最新の実行記録と再現方法は [HANDOFF.md](../HANDOFF.md) / [保存済み検査記録](../docs/validation/README.md) を参照する。
+KiCad対応Pythonで `scripts/check_control_board.py` を実行する。制御板ERC、DRC（警告含む）、回路図等価性、全219パッドのネット、候補フットプリント/配置、共有外形/板厚/穴、RTC禁止領域を確認する。製造承認は常にfalse。`scripts/route_control_board.py` と取り込みスクリプトはDSN/SESのハッシュ対応を確認する。最新の実行記録と再現方法は `git show 4e38a86:HANDOFF.md` / [保存済み検査記録](../docs/validation/README.md) を参照する。

@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def check(require_downloads=False):
     errors = []
     required = [
-        "README.md", "AGENTS.md", "HANDOFF.md", "docs/control-board-r1.md", "docs/validation/README.md", "docs/requirements.md", "docs/components.md",
+        "README.md", "AGENTS.md", "docs/control-board-r1.md", "docs/validation/README.md", "docs/requirements.md", "docs/components.md",
         "docs/architecture.md", "docs/bom.csv", "docs/risks.md",
         "docs/environment.md", "docs/implementation-plan.md", "docs/decisions.md",
         "docs/verification.md", "docs/references/README.md", "hardware/README.md",
@@ -32,7 +32,7 @@ def check(require_downloads=False):
     for source in sources.values():
         if not source["url"].startswith("https://") or not source.get("locator"):
             errors.append(f"出典URL/参照箇所が不足: {source['id']}")
-    markdown_files = [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / "HANDOFF.md"]
+    markdown_files = [ROOT / "README.md", ROOT / "AGENTS.md"]
     for directory in ("docs", "hardware", "enclosure", "firmware", "tests", "manufacturing"):
         markdown_files.extend((ROOT / directory).rglob("*.md"))
     for document in markdown_files:

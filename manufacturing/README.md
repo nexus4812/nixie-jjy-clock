@@ -16,4 +16,4 @@ Phase 5で元のKiCadデータから `build/manufacturing/<revision>/` にGerber
 
 実装後は低電圧のみから段階通電し、HVダミー負荷、単管、全管、受信の順に進める。通電前の具体的な測定値・合否基準は最終回路が決まってから作成する。製造ファイルの出力成功と、安全に動く完成品の確認は別の記録にする。
 
-低電圧制御板 `control-r1` は候補配置/配線済みでERC/DRC/未配線/回路図等価性の問題0を確認した。`hardware/pcb/generated/control-board.kicad_pcb` と保存したDSN/SESもレビュー用であり、現物未照合のまま発注しない。高電圧表示/電源/コロンPCBは未配線。[最新の残作業](../HANDOFF.md) を参照する。
+低電圧制御板 `control-r1` は候補配置/配線済みでERC/DRC/未配線/回路図等価性の問題0を確認した。`hardware/pcb/generated/control-board.kicad_pcb` と保存したDSN/SESもレビュー用であり、現物未照合のまま発注しない。高電圧表示/電源/コロンPCBも候補配置/配線済みだが同じくレビュー用で、Gerberは出力していない。`git show 4e38a86:HANDOFF.md` を参照する。

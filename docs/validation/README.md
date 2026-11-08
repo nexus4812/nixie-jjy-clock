@@ -21,4 +21,6 @@
 
 KiCadのSVGとFreeroutingのSESは生成元の行末空白も保持する。内容ハッシュを保つために空白を手修正せず、`.gitattributes` でこの生成物だけGitの空白検査対象から外す。手編集する資料/スクリプトは通常どおり検査する。
 
-配線のDSN/SESと対応記録は [hardware側の保存版](../../hardware/pcb/generated/routing/README.md)。外部ツール/PDFはGitに含めない。再開方法は [HANDOFF.md](../../HANDOFF.md)。
+`2026-11-08-hv/` はHV基板r1追加時の検査スナップショット（[記録](../hv-boards-r1.md)）。表示/コロン/電源の verification/ERC/DRC、全体回路図、制御板の再検査、資料検査を含む。製造承認ではない。
+
+配線のDSN/SESと対応記録は [hardware側の保存版](../../hardware/pcb/generated/routing/README.md)。外部ツール/PDFはGitに含めない。再開方法は `git show 4e38a86:HANDOFF.md`。

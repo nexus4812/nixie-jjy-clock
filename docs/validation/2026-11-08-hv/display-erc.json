@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-08T19:39:59",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/4202f84e-1384-5ea6-b2a3-ac3b290b90a5",
+            "violations": []
+        },
+        {
+            "path": "/電源・保護・HV停止制御/",
+            "uuid_path": "/4202f84e-1384-5ea6-b2a3-ac3b290b90a5/deaf366a-6787-5c30-9e45-3b921497d032",
+            "violations": []
+        },
+        {
+            "path": "/表示子1・IN-12Bソケット候補/",
+            "uuid_path": "/4202f84e-1384-5ea6-b2a3-ac3b290b90a5/7ea91634-3a90-5eee-b4b0-1935ffcc8a23",
+            "violations": []
+        }
+    ],
+    "source": "display-board.kicad_sch"
+}

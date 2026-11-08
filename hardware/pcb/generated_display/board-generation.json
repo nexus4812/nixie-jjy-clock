@@ -1,0 +1,317 @@
+{
+  "status": "ROUTED_CANDIDATE_NOT_FOR_MANUFACTURE",
+  "revision": "display-r1",
+  "layout_sha256": "55b6e29b2842e282c6a0d68f35f7c16320db4fd05a007175d73977a3564e5284",
+  "mechanical_sha256": "ad1ad668798e220fcee5c1cdb3e5d12154a8be6403f1569c8be29b2554062733",
+  "footprints": [
+    {
+      "reference": "V1",
+      "library_id": "JJYClock:IN-12B_Socket_Candidate",
+      "library_file_sha256": "c0cb86ea2540bd64ecd9a2a29d33121d7d60eb9e677b9394b7343470b2654517",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        17,
+        27
+      ],
+      "rotation_deg": 0,
+      "side": "F"
+    },
+    {
+      "reference": "U10",
+      "library_id": "Package_DIP:DIP-16_W7.62mm",
+      "library_file_sha256": "d9f5f5a3dbebef059800781d37575e4120e5ae5e7fd96001eda365f65de94485",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "at_mm": [
+        25.89,
+        47.81
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "R100",
+      "library_id": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+      "library_file_sha256": "5a041acbc89b67825c2c2014f2338917607aa25f14a8ca623ef79a0fd365afcc",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        8,
+        12.5
+      ],
+      "rotation_deg": 180,
+      "side": "B"
+    },
+    {
+      "reference": "R101",
+      "library_id": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical",
+      "library_file_sha256": "0da1aa063ed56b701243c010dea94e3f845a692e5b181c7a8d282aaf362e991f",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        26,
+        9
+      ],
+      "rotation_deg": 270,
+      "side": "B"
+    },
+    {
+      "reference": "C100",
+      "library_id": "Capacitor_SMD:C_0805_2012Metric",
+      "library_file_sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        4.5,
+        44
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "J10",
+      "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "library_file_sha256": "5f2993c50dbd5024384bf6fa972fcd10d40d0837039e1e371b326a27d9f5b8b7",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "at_mm": [
+        23.35,
+        51.6
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "J20",
+      "library_id": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+      "library_file_sha256": "5483de7bfe040055486aa37234fd7d7d86c9af787aace4bae4f87bffea6bca1c",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        14.46,
+        4.2
+      ],
+      "rotation_deg": 180,
+      "side": "B"
+    },
+    {
+      "reference": "Z10",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        25.5,
+        36
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D100",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        3.5,
+        21
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D101",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        3.5,
+        26
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D102",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        3.5,
+        31
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D103",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        3.5,
+        36
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D104",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        3.5,
+        16
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D105",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30.5,
+        21
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D106",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30.5,
+        26
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D107",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30.5,
+        31
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D108",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30.5,
+        36
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    },
+    {
+      "reference": "D109",
+      "library_id": "Diode_SMD:D_SOD-123",
+      "library_file_sha256": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "at_mm": [
+        30.5,
+        16
+      ],
+      "rotation_deg": 90,
+      "side": "B"
+    }
+  ],
+  "layers": 2,
+  "manufacturing_release": false,
+  "routing": {
+    "router": "Freerouting 2.5.0 JVM",
+    "jar_sha256": "f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7",
+    "dsn_sha256": "422028945eb37f6ef165e33249fbdcc9e31876e21004784fa94c38081631a818",
+    "ses_sha256": "6ed575a63dff66b72930f560062ea519549b80f1ad8603809a34215aa1278182"
+  },
+  "tracks_widened_to_minimum": 48,
+  "dangling_vias_removed": 2,
+  "tracks_and_vias": 274
+}

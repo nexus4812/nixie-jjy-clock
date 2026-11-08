@@ -2,7 +2,7 @@
   "status": "ROUTED_CANDIDATE_NOT_FOR_MANUFACTURE",
   "revision": "control-r1",
   "layout_sha256": "fe06a787525f01dd9d97be741d64c876ed580489680820c35a4b2c2e88f2c9be",
-  "mechanical_sha256": "74ae60eafa13555db514e77a6e17300a60d0c50df21a3e49cd89f23c5cb596f3",
+  "mechanical_sha256": "ad1ad668798e220fcee5c1cdb3e5d12154a8be6403f1569c8be29b2554062733",
   "footprints": [
     {
       "reference": "A1",

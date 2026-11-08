@@ -30,4 +30,4 @@ PDF本体は再配布条件が未確認のためGitに入れない。Ubuntu移�
 
 その他の電源、ネオン、比較価格、KiCad、MCP、Arduino CLI、既存公開設計は台帳に記録した。参考Etsyページ（S31）は取得エラーのため、外観の細部を確認したとは扱わない。
 
-control-r1追加のS37〜S41はローカル配線ツール、KiCad標準ライブラリの利用条件、電池ホルダー候補と一時Javaの出典。外部ツール本体/PDFはGitへ追加せず、使用版/ハッシュと検査結果を [HANDOFF.md](../../HANDOFF.md) と `docs/validation/` に保存する。
+control-r1追加のS37〜S41はローカル配線ツール、KiCad標準ライブラリの利用条件、電池ホルダー候補と一時Javaの出典。外部ツール本体/PDFはGitへ追加せず、使用版/ハッシュと検査結果を `git show 4e38a86:HANDOFF.md` と `docs/validation/` に保存する。

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "資料の整合性のみ。回路・安全性・Ubuntuでの実行は未検証。価格の実売再確認は行わない。",
+  "source_count": 41,
+  "bom_rows": 21,
+  "budget_jpy": {
+    "circuit_low": 15315,
+    "circuit_high": 26325,
+    "shipping_low": 1000,
+    "shipping_high": 2500,
+    "all_low": 16315,
+    "all_high": 28825
+  },
+  "downloaded_receipt_count": 11,
+  "unavailable_downloads": [
+    "S05",
+    "S06",
+    "S16",
+    "S17",
+    "S18"
+  ],
+  "errors": []
+}

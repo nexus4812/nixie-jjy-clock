@@ -1,0 +1,274 @@
+{
+ "revision": "power-r1",
+ "status": "候補フットプリント・現物未照合・製造不可",
+ "mechanical_key": "power_pcb",
+ "flags": [
+  "#FLG01",
+  "#FLG02",
+  "#FLG04"
+ ],
+ "routing": {
+  "clearance": 0.3,
+  "autorouter_clearance": 0.35,
+  "nominal_track_width": 0.3,
+  "minimum_track_width": 0.25,
+  "via_diameter": 0.8,
+  "via_drill": 0.4,
+  "hv_clearance": 1.5,
+  "hv_lv_clearance": 2.5,
+  "cathode_lv_clearance": 0.9,
+  "hv_edge_clearance": 1.5,
+  "hv_hole_clearance": 2.5
+ },
+ "hv_nets": [
+  "HV_RAW",
+  "HV_BLEED_MID"
+ ],
+ "cathode_patterns": [],
+ "extra_holes": [
+  {
+   "at": [
+    43,
+    22
+   ],
+   "diameter": 2.2,
+   "note": "S12 p.3 NCH6100HV固定穴。出荷版未照合(R06)"
+  },
+  {
+   "at": [
+    84,
+    22
+   ],
+   "diameter": 2.2
+  }
+ ],
+ "silkscreen": [
+  {
+   "text": "HV 200V DANGER",
+   "at": [
+    63,
+    41
+   ],
+   "layer": "F"
+  }
+ ],
+ "seed_tracks": [],
+ "components": {
+  "J1": {
+   "footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+   "at": [
+    10,
+    5
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "F1": {
+   "footprint": "Fuse:Fuseholder_Clip-5x20mm_Bel_FC-203-22_Lateral_P17.80x5.00mm_D1.17mm_Horizontal",
+   "at": [
+    6,
+    15
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "D1": {
+   "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+   "at": [
+    6,
+    26
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "C1": {
+   "footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+   "at": [
+    20,
+    7
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "C2": {
+   "footprint": "Capacitor_SMD:C_0805_2012Metric",
+   "at": [
+    28,
+    7
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "J47": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+   "at": [
+    6,
+    31
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "J43": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+   "at": [
+    17,
+    31
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "J44": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+   "at": [
+    6,
+    37
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "J65": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+   "at": [
+    17,
+    37
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "JP2": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+   "at": [
+    6,
+    43
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "J48": {
+   "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+   "at": [
+    17,
+    43
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "R1": {
+   "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+   "at": [
+    6,
+    48
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "R2": {
+   "footprint": "Resistor_SMD:R_0805_2012Metric",
+   "at": [
+    19,
+    47.5
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "R3": {
+   "footprint": "Resistor_SMD:R_0805_2012Metric",
+   "at": [
+    24,
+    47.5
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "Q1": {
+   "footprint": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+   "at": [
+    25,
+    41
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "J49": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    35,
+    10
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "R4": {
+   "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+   "at": [
+    44,
+    34
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "R5": {
+   "footprint": "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal",
+   "at": [
+    60,
+    34
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "J2": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    35,
+    26
+   ],
+   "rotation": 90,
+   "side": "F"
+  },
+  "J60": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    17,
+    55.5
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "J61": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    30.5,
+    55.5
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "J62": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    44,
+    55.5
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "J63": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    57.5,
+    55.5
+   ],
+   "rotation": 0,
+   "side": "F"
+  },
+  "J64": {
+   "footprint": "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical",
+   "at": [
+    71,
+    55.5
+   ],
+   "rotation": 0,
+   "side": "F"
+  }
+ }
+}

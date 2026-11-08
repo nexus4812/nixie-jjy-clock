@@ -1,0 +1,42 @@
+{
+  "board": "display",
+  "status": "PASS",
+  "errors": [],
+  "kicad_version": "10.0.8",
+  "footprints": 22,
+  "circuit_components": 18,
+  "pads_checked": 64,
+  "trace_segments": 260,
+  "vias": 14,
+  "minimum_track_width_mm": 0.25,
+  "erc_violations": 0,
+  "erc_types": {},
+  "drc_violations": 0,
+  "drc_types": {},
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "drc_ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "manufacturing_release": false,
+  "scope": "幾何とネットの照合のみ。部品定格・絶縁の妥当性・現物適合・実機安全性は未検証。"
+}

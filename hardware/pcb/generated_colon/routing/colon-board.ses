@@ -1,0 +1,275 @@
+(session "colon-board"
+  (base_design "colon-board")
+  (placement
+    (resolution um 10)
+    (component "MountingHole_2.2mm_M2"
+      (place H2 80000 -40000 front 0)
+      (place H1 80000 -560000 front 0)
+    )
+    (component "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (place J31 130000 -540000 back 0)
+    )
+    (component "Resistor_SMD:R_0805_2012Metric"
+      (place R153 125000 -450000 back 0)
+      (place R152 142000 -505000 back 270)
+    )
+    (component "Package_TO_SOT_THT:TO-92_Inline_Wide"
+      (place Q4 105000 -490000 back 0)
+    )
+    (component "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+      (place R151 134000 -322000 back 90)
+      (place R150 134000 -220000 back 90)
+      (place NE2 80000 -354600 front 270)
+      (place NE1 80000 -194600 front 270)
+    )
+    (component "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical"
+      (place J30 54600 -115000 back 180)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "10.0.8")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "COLON_BASE"
+        (wire
+          (path B.Cu 3000
+            134125 -450000
+            134100 -450000
+          )
+        )
+        (wire
+          (path B.Cu 3000
+            142000 -495875
+            142000 -495900
+          )
+        )
+        (wire
+          (path B.Cu 3000
+            79600 -490000
+            79600 -515000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            79600 -515000
+            126000 -515000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            126000 -515000
+            130000 -495900
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            130000 -495900
+            142000 -495900
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            142000 -495900
+            134100 -450000
+          )
+          (type protect)
+        )
+      )
+      (net "COLON_ENABLE"
+        (wire
+          (path B.Cu 3000
+            142000 -514125
+            130223 -525902
+            119573 -525902
+            116024 -529451
+            116024 -551424
+            130000 -565400
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 3000
+            105000 -490000
+            105000 -502517
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            105000 -502517
+            108129 -502517
+            130000 -524388
+            130000 -540000
+          )
+        )
+        (wire
+          (path B.Cu 3000
+            105000 -490000
+            105000 -477483
+          )
+        )
+        (wire
+          (path B.Cu 3000
+            105000 -477483
+            115875 -466608
+            115875 -450000
+          )
+        )
+      )
+      (net "HV_RAW"
+        (wire
+          (path F.Cu 3000
+            54600 -115000
+            54600 -155000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            54600 -155000
+            80000 -155000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            80000 -155000
+            134000 -220000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            134000 -220000
+            108000 -240000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            108000 -240000
+            108000 -300000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            108000 -300000
+            134000 -322000
+          )
+          (type protect)
+        )
+      )
+      (net "NEON0_ANODE"
+        (wire
+          (path F.Cu 3000
+            134000 -270800
+            120000 -250000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            120000 -250000
+            109000 -230000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            109000 -230000
+            109000 -220000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            109000 -220000
+            99000 -220000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            99000 -220000
+            80000 -194600
+          )
+          (type protect)
+        )
+      )
+      (net "NEON1_ANODE"
+        (wire
+          (path B.Cu 3000
+            134000 -372800
+            100000 -365000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 3000
+            100000 -365000
+            80000 -354600
+          )
+          (type protect)
+        )
+      )
+      (net "NEON_CATHODES"
+        (wire
+          (path F.Cu 3000
+            80000 -245400
+            106000 -270000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            106000 -270000
+            106000 -380000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            106000 -380000
+            80000 -405400
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            80000 -405400
+            54200 -440000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 3000
+            54200 -440000
+            54200 -490000
+          )
+          (type protect)
+        )
+      )
+    )
+  )
+)

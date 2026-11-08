@@ -4,7 +4,7 @@
 
 利用者の導入後、KiCad **10.0.8** を検出。CLIは `/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli`、付属Pythonは `/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/3.9/bin/python3`。後者で `import pcbnew` と `GetBuildVersion()` を実行できた。通常のPython 3.13からのimportとは別の環境である。
 
-`sch erc`、`sch export netlist/pdf/bom` のヘルプを確認して使用し、回路図11ページの読込と出力を検証した。PCBは付属SWIG APIで機械外形と穴を作成し読戻した。現在は制御板54部品の配置/配線とERC/DRC/回路図等価性の検査まで実施した。[最新手順](../HANDOFF.md) と [control-r1記録](control-board-r1.md) を参照する。MCPを追加しなくても今回の作業を実行できた。
+`sch erc`、`sch export netlist/pdf/bom` のヘルプを確認して使用し、回路図11ページの読込と出力を検証した。PCBは付属SWIG APIで機械外形と穴を作成し読戻した。現在は制御板54部品の配置/配線とERC/DRC/回路図等価性の検査まで実施した。`git show 4e38a86:HANDOFF.md` と [control-r1記録](control-board-r1.md) を参照する。MCPを追加しなくても今回の作業を実行できた。
 
 macOSのSWIGではwxアプリケーション初期化を行う。KiCad側のフォント設定/画像ハンドラーについて診断メッセージが出ることがあるが、終了コード、出力の存在、読戻しを別々に確認し、ログに残す。CLIの診断メッセージを成功の根拠にしない。
 
@@ -74,4 +74,4 @@ Phase 1では不要。必要になるのはKiCadのGUI/API経由で図面や配�
 
 ## ローカル配線ツール
 
-Freerouting 2.5.0 JARと一時配置したZulu Java 25で配線した。システムJava 14は変更していない。ツール本体は `.cache/` にありcloneには含まれない。`scripts/route_control_board.py` は公式JARのSHA-256を照合し、ローカル処理・解析データ送信無効・GUI/API/MCPサーバー無効で実行する。実行時の入力/出力ハッシュを記録し、KiCadで再検査する。必要なURL、版、パス、再開方法は [HANDOFF.md](../HANDOFF.md) に集約した。Ubuntu上の実行は未検証。
+Freerouting 2.5.0 JARと一時配置したZulu Java 25で配線した。システムJava 14は変更していない。ツール本体は `.cache/` にありcloneには含まれない。`scripts/route_control_board.py` は公式JARのSHA-256を照合し、ローカル処理・解析データ送信無効・GUI/API/MCPサーバー無効で実行する。実行時の入力/出力ハッシュを記録し、KiCadで再検査する。必要なURL、版、パス、再開方法は `git show 4e38a86:HANDOFF.md` に集約した。Ubuntu上の実行は未検証。
